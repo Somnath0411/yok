@@ -1,4 +1,5 @@
 import React from 'react'
+import image from '../assets/send-btn-image.jpeg'
 
 export default function Footer(){
   return (
@@ -7,7 +8,7 @@ export default function Footer(){
         <h3>Connect with us</h3>
         <div className="newsletter">
           <input placeholder="Your email" />
-          <button className="send">✈</button>
+          <button className="send"><img className="send-btn-image" src={image} alt="send-btn"/></button>
         </div>
       </div>
 
