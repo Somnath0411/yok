@@ -6,15 +6,13 @@ export default function Hero() {
       <div className="hero-inner">
         <div className="hero-text">
           <h1>
-            Build A <span className="accent">Future</span>
-            <br /> Powered By <span className="accent">Expertise</span>
+           From idea to impact, faster than ever
           </h1>
           <p className="lead">
-            Advance your journey with professional IT services and personalized career guidance that help you reach your fullest potential.
+             Design, develop, and modernize with AI, cloud, and data at the core
           </p>
           <div className="hero-ctas">
-            <button className="btn primary">Start Your Project</button>
-            <button className="btn outline">Get Career Help</button>
+            <button className="btn outline">Reach US</button>
           </div>
         </div>
         <div className="hero-media">

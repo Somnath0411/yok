@@ -1,28 +1,40 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Card({highlight}){
-  return (
-    <div className={"service-card "+(highlight? 'highlight':'')}>
-      <div className="service-icon">{/* icon */}</div>
-      <h3>Intelligent Applications</h3>
-      <p>Build agile, high-performing applications tailored to your goals. We design and modernize solutions that streamline workflows, enhance scalability, and drive measurable results.</p>
-      <button className="btn outline small">Learn more</button>
-    </div>
-  )
-}
+const l1={'build':{heading:'Application Development & Modernization',
+  p1:"Design and develop modern,cloud-native applications",
+  p2:"Transform legacy systems into scalable, high-performance platforms",
+  p3:"Deliver secure, reliable engineering built for growth"
+},'scale':{},'intelligence':{}}
+class Services extends Component{
+  state={
 
-export default function Services(){
-  return (
+  }
+  render(){  
+    return (
     <section className="services container">
       <div className="services-top">
-        <h2>Engineered for <span className="accent">Business Growth</span></h2>
-        <p className="muted">Delivering reliable, scalable technology with speed and innovation so your business stays agile and ahead in a rapidly evolving digital landscape.</p>
+        <h2>The platform for smarter<br/>scalable transformation</h2>
       </div>
       <div className="services-row">
-        <Card />
-        <Card highlight />
-        <Card />
+       <button className='service-btn'>Build</button>
+       <button className='service-btn'>Scale</button>
+       <button className='service-btn'>Intelligence</button>
+      </div>
+      <div className='services-body'>
+        <img className='services-body-img'src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80&auto=format&fit=crop" alt="services" />
+        <div className='services-body-description'>
+          <h2>
+            {l1.build.heading}
+          </h2>
+          <ul className='description-list'>
+           <li className='description-list-item'>{l1.build.p1}</li>
+           <li className='description-list-item'>{l1.build.p2}</li>
+           <li className='description-list-item'>{l1.build.p3}</li>
+          </ul>
+        </div>
       </div>
     </section>
   )
 }
+}
+export default Services;
