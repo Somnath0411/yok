@@ -58,11 +58,12 @@ h1{font-size:40px;line-height:1.02;margin:0;color:#071132}
 .why{padding:72px 0;background:#fff}
 .why-inner{display:flex;gap:40px;align-items:center}
 .why-text{flex:1}
-.why-media img{width:420px}
+.why-media img{width:420px;}
+.symbotz-difference-heading{font-size:40px;}
 .expertise ul{list-style:none;padding:0}
 .expertise li{margin:12px 0;color:var(--muted)}
 .dot{display:inline-block;width:12px;height:12px;border-radius:999px;background:#d6d6d6;margin-right:10px}
-.dot.active{background:var(--blue)}
+.dot.active{background:var(--blue);color:#476788}
 
 .footer{background:var(--blue);color:#fff;padding:64px 0;display:flex;flex-direction:column;}
 .footer-top{display:flex;flex-direction:column;align-items:center;}

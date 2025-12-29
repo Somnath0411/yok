@@ -5,15 +5,15 @@ export default function WhyChoose(){
     <section className="why container">
       <div className="why-inner">
         <div className="why-text">
-          <h2>Why <span className="accent">Choose Us?</span></h2>
-          <p className="muted">We help organizations move from digital ambition to execution. Our solutions are designed with precision, scalability, and measurable impact in mind—enabling you to innovate faster and operate smarter.</p>
+          <h2 className="symbotz-difference-heading">The <span className="accent">Symbotz</span> Difference</h2>
+          <p className="muted">Connect your goals to the systems that support them.
+           Build with clarity, scale with cloud confidence, and move faster with data guiding the way.</p>
 
           <div className="expertise">
-            <h4>Expertise</h4>
             <ul>
-              <li><span className="dot"/> Cloud Solutions</li>
-              <li className="active"><span className="dot active"/> Security & Compliance</li>
-              <li><span className="dot"/> AI & Automation</li>
+              <li className="active"><span className="dot active"/> Built right from the start</li>
+              <li className="active"><span className="dot active"/> Scales when you need it</li>
+              <li className="active"><span className="dot active"/> Support that stays with you</li>
             </ul>
           </div>
         </div>
