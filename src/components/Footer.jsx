@@ -6,7 +6,10 @@ export default function Footer(){
     <footer className="footer">
       <div className="footer-top container">
        <div>
-        <h1>Let’s Work Together<br/>Smarter, Starting<br/>Today</h1>
+        <h1>Let’s Work Together Smarter, Starting Today</h1>
+       </div>
+       <div>
+         <button className="btn outline">Reach US</button>
        </div>
       </div>
 
@@ -47,7 +50,7 @@ export default function Footer(){
           </ul>
         </div>
       </div>
-
+      <hr/>
       <div className="footer-down container">
         <div className="logo-big">LOGO</div>
         <div>© 2025 Name. All Rights Reserved.</div>

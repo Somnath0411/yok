@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function WhyChoose(){
   return (
-    <section className="why container">
+    <div className="symbots-difference-bg">
+      <section className="why container">
       <div className="why-inner">
         <div className="why-text">
           <h2 className="symbotz-difference-heading">The <span className="accent">Symbotz</span> Difference</h2>
@@ -22,5 +23,7 @@ export default function WhyChoose(){
         </div>
       </div>
     </section>
+    </div>
+    
   )
 }
