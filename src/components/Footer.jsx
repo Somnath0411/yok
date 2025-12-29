@@ -5,11 +5,9 @@ export default function Footer(){
   return (
     <footer className="footer">
       <div className="footer-top container">
-        <h3>Connect with us</h3>
-        <div className="newsletter">
-          <input placeholder="Your email" />
-          <button className="send"><img className="send-btn-image" src={image} alt="send-btn"/></button>
-        </div>
+       <div>
+        <h1>Let’s Work Together<br/>Smarter, Starting<br/>Today</h1>
+       </div>
       </div>
 
       <div className="footer-links container">
