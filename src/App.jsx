@@ -1,23 +1,23 @@
 import './App.css'
+import {Route,Routes} from 'react-router-dom'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Brands from './components/Brands'
-import Services from './components/Services'
-import WhyChoose from './components/WhyChoose'
+import Home from './components/Home'
 import Footer from './components/Footer'
+import Servicespage from './components/Servicespage'
+import NotFound from './components/NotFound'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="site-root">
-      <Header />
-      <main>
-        <Hero />
-        <Brands />
-        <Services />
-        <WhyChoose />
-      </main>
-      <Footer />
-    </div>
+      <div className="site-root">
+        <Header />
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/services" element={<Servicespage/>}/>
+            <Route element={<NotFound/>}/>
+          </Routes>
+        <Footer />
+      </div>
   )
 }
 
