@@ -1,6 +1,6 @@
 import Hero from './Hero'
 import Brands from './Brands'
-import Services from './Services'
+import Services from './servicesSection/Services.jsx'
 import WhyChoose from './WhyChoose'
 import FadeContent from '../assets/FadeContent.jsx'
 

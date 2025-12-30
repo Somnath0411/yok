@@ -11,8 +11,8 @@ export default function Header() {
         </div>
         <nav className="main-nav">
           <ul>
-            <Link to="/services"><li>Services</li></Link>
-            <Link to="/aboutus"><li>About us</li></Link>
+            <Link to="/services" style={{textDecoration:"none"}}><li>Services</li></Link>
+            <Link to="/aboutus" style={{textDecoration:"none"}}><li>About us</li></Link>
           </ul>
         </nav>
         <div className="cta">
