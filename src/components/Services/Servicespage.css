@@ -1,0 +1,167 @@
+/* Services.css */
+.services-container {
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f0f7ff;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #0d2b4d;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: #475569;
+  max-width: 450px;
+  margin-bottom: 32px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #0070f3;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Service Detail Sections */
+.service-section {
+  padding: 80px 10%;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.service-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.service-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Service List Items */
+.service-list {
+  margin-top: 40px;
+}
+
+.service-item {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 20px 0;
+}
+
+.service-item h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.service-item.active h3 {
+  color: #0f172a;
+}
+
+.service-item.inactive h3 {
+  color: #cbd5e1;
+}
+
+.service-item p {
+  color: #64748b;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* Footer CTA */
+.cta-section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+/* Animation for the description slide-down */
+/* ... (keep existing styles until description-wrapper) */
+
+/* Slowed down Animation for the description slide-down */
+.description-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  /* Slowed down from 0.4s to 0.8s with a smoother curve */
+  transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.6s ease;
+  opacity: 0;
+}
+
+.service-item.active .description-wrapper {
+  max-height: 200px; 
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.service-item {
+  cursor: pointer;
+  padding: 20px 0;
+  border-bottom: 1px solid #e2e8f0;
+  /* Slowed general transition from 0.3s to 0.6s */
+  transition: all 0.6s ease;
+}
+
+.service-item h3 {
+  /* Slowed text color change */
+  transition: color 0.6s ease;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Slowed Image Fade Animation */
+.fade-in {
+  /* Slowed from 0.5s to 1.2s for a more "cinematic" feel */
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); /* Increased travel distance for a smoother look */
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* ... (rest of your CSS) */
