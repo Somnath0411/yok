@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Footer from './components/Footer'
 import Servicespage from './components/Servicespage'
 import NotFound from './components/NotFound'
+import FadeContent from './assets/FadeContent.jsx'
 
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
             <Route path="/services" element={<Servicespage/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Routes>
-        <Footer />
+        <FadeContent><Footer /></FadeContent>
       </div>
   )
 }
