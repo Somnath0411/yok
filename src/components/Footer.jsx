@@ -24,16 +24,6 @@ export default function Footer(){
           </ul>
         </div>
         <div>
-          <h5>PRODUCTS</h5>
-          <ul>
-            <li>Intelligent Applications</li>
-            <li>Cyber Resilience</li>
-            <li>Digital Acceleration</li>
-            <li>Cloud Modernization</li>
-            <li>Data Intelligence</li>
-          </ul>
-        </div>
-        <div>
           <h5>LEGAL</h5>
           <ul>
             <li>General Info</li>
