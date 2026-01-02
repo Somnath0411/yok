@@ -51,6 +51,7 @@
   display: flex;
   align-items: flex-start;
   gap: 80px;
+  min-height: 600px; /* Prevents page jumping when descriptions open */
 }
 
 .service-section.reverse {
@@ -65,11 +66,15 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 100px; /* Keeps the image in view while hovering list */
 }
 
 .service-image img {
   max-width: 100%;
   height: auto;
+  border-radius: 12px;
 }
 
 /* Service List Items */
@@ -78,28 +83,80 @@
 }
 
 .service-item {
+  cursor: pointer;
+  padding: 24px 0;
   border-bottom: 1px solid #e2e8f0;
-  padding: 20px 0;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+/* The "Active Line" indicator */
+.service-item::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 0;
+  transition: height 0.4s ease;
+}
+
+.service-item.active::before {
+  height: 70%;
 }
 
 .service-item h3 {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin: 0;
+  transition: color 0.4s ease, transform 0.4s ease;
 }
 
 .service-item.active h3 {
-  color: #0f172a;
+  transform: translateX(10px); /* Slight nudge when active */
 }
 
 .service-item.inactive h3 {
   color: #cbd5e1;
 }
 
+/* Description Slide-down */
+.description-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.4s ease;
+  opacity: 0;
+}
+
+.service-item.active .description-wrapper {
+  max-height: 200px; 
+  opacity: 1;
+  margin-top: 12px;
+  padding-left: 10px;
+}
+
 .service-item p {
   color: #64748b;
-  margin-top: 10px;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Image Fade Animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: scale(0.95) translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1) translateY(0); 
+  }
 }
 
 /* Footer CTA */
@@ -112,56 +169,3 @@
   font-size: 3rem;
   margin-bottom: 40px;
 }
-
-/* Animation for the description slide-down */
-/* ... (keep existing styles until description-wrapper) */
-
-/* Slowed down Animation for the description slide-down */
-.description-wrapper {
-  max-height: 0;
-  overflow: hidden;
-  /* Slowed down from 0.4s to 0.8s with a smoother curve */
-  transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
-              opacity 0.6s ease;
-  opacity: 0;
-}
-
-.service-item.active .description-wrapper {
-  max-height: 200px; 
-  opacity: 1;
-  margin-top: 10px;
-}
-
-.service-item {
-  cursor: pointer;
-  padding: 20px 0;
-  border-bottom: 1px solid #e2e8f0;
-  /* Slowed general transition from 0.3s to 0.6s */
-  transition: all 0.6s ease;
-}
-
-.service-item h3 {
-  /* Slowed text color change */
-  transition: color 0.6s ease;
-  font-size: 1.25rem;
-  margin: 0;
-}
-
-/* Slowed Image Fade Animation */
-.fade-in {
-  /* Slowed from 0.5s to 1.2s for a more "cinematic" feel */
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { 
-    opacity: 0; 
-    transform: translateY(20px); /* Increased travel distance for a smoother look */
-  }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
-  }
-}
-
-/* ... (rest of your CSS) */
