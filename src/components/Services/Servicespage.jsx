@@ -11,7 +11,7 @@ const ServicesPage = () => {
     { 
         title: "Digital Transformation Consulting", 
         description: "Assess where you are today and build a clear roadmap to a modern, scalable digital ecosystem.",
-        img: "/app-dev-1.png" // Change these to your actual image paths
+        img: "/app-dev-1.png" 
     },
     { 
         title: "Custom Web & Mobile Development", 
@@ -47,7 +47,8 @@ const ServicesPage = () => {
               <div 
                 key={index} 
                 className={`service-item ${activeAppIndex === index ? 'active' : 'inactive'}`}
-                onClick={() => setActiveAppIndex(index)}
+                // Changed from onClick to onMouseEnter for smoother UX
+                onMouseEnter={() => setActiveAppIndex(index)}
               >
                 <h3>{service.title}</h3>
                 <div className="description-wrapper">
@@ -58,8 +59,13 @@ const ServicesPage = () => {
           </div>
         </div>
         <div className="service-image">
-          {/* The image updates based on the active index */}
-          <img src={subServices[activeAppIndex].img} alt="Service Illustration" className="fade-in" key={activeAppIndex} />
+          {/* The key={activeAppIndex} forces the image to re-mount and trigger CSS animations */}
+          <img 
+            src={subServices[activeAppIndex].img} 
+            alt="Service Illustration" 
+            className="fade-in" 
+            key={activeAppIndex} 
+          />
         </div>
       </section>
 
@@ -72,7 +78,8 @@ const ServicesPage = () => {
               <div 
                 key={index} 
                 className={`service-item ${activeCloudIndex === index ? 'active' : 'inactive'}`}
-                onClick={() => setActiveCloudIndex(index)}
+                // Changed from onClick to onMouseEnter
+                onMouseEnter={() => setActiveCloudIndex(index)}
               >
                 <h3>{service.title}</h3>
                 <div className="description-wrapper">
@@ -83,7 +90,12 @@ const ServicesPage = () => {
           </div>
         </div>
         <div className="service-image">
-          <img src={subServices[activeCloudIndex].img} alt="Cloud Illustration" className="fade-in" key={activeCloudIndex} />
+          <img 
+            src={subServices[activeCloudIndex].img} 
+            alt="Cloud Illustration" 
+            className="fade-in" 
+            key={activeCloudIndex} 
+          />
         </div>
       </section>
       {/* 4. FAQ Section with Accordion */}
