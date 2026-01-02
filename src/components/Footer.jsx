@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../assets/send-btn-image.jpeg'
+import {Link} from 'react-router-dom'
 
 export default function Footer(){
   return (
@@ -19,7 +20,7 @@ export default function Footer(){
           <ul>
             <li>Home</li>
             <li>Products</li>
-            <li>Services</li>
+            <Link to="/services" onClick={()=>window.scrollTo(0,0)} style={{textDecoration:"none"}}><li>Services</li></Link>
             <li>Career</li>
           </ul>
         </div>
@@ -40,7 +41,14 @@ export default function Footer(){
           </ul>
         </div>
       </div>
-      <hr/>
+      <div style={{padding:'40px' }} >
+        <hr style={{  
+          height: '1px', 
+          backgroundColor: '#000000',
+          margin: '20px',
+          opacity: 0.75     
+        }} />
+      </div>
       <div className="footer-down container">
         <div className="logo-big">LOGO</div>
         <div>© 2025 Name. All Rights Reserved.</div>

@@ -14,7 +14,11 @@
   justify-content: space-between;
   gap: 40px;
 }
-
+.hero-image{
+  width:35vw;
+  height:65vh;
+  border-radius:10px;
+}
 .hero-content h1 {
   font-size: 3.5rem;
   font-weight: 800;

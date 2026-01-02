@@ -22,6 +22,9 @@ class Services extends Component{
   componentDidMount(){
     this.timerId=setInterval(this.setTimer,3000)
   }
+  componentWillUnmount(){
+    clearInterval(this.timerId)
+  }
   setTimer = () =>{
     const {number}=this.state
     if(number>3){
