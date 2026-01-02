@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Servicespage.css';
+import AccordionDemo from '../../assets/Accordian';
 
 const ServicesPage = () => {
   // Track which service is open for each section
@@ -85,8 +86,13 @@ const ServicesPage = () => {
           <img src={subServices[activeCloudIndex].img} alt="Cloud Illustration" className="fade-in" key={activeCloudIndex} />
         </div>
       </section>
+      {/* 4. FAQ Section with Accordion */}
+      <section className="faq-section">
+        <div className='faq-text'/>
+          <h1 className="section-title">Still have Questions?We have answers.</h1>
+          <div><AccordionDemo /></div>
+      </section>
     </div>
   );
 };
-
 export default ServicesPage;
