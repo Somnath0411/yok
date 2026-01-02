@@ -101,8 +101,8 @@ const ServicesPage = () => {
       {/* 4. FAQ Section with Accordion */}
       <section className="faq-section">
         <div className='faq-text'/>
-          <h1 className="section-title">Still have Questions?We have answers.</h1>
-          <div><AccordionDemo /></div>
+          <h1 className="section-title">Still have Questions?<br/>We have answers.</h1>
+          <div className='faq-items'><AccordionDemo /></div>
       </section>
     </div>
   );
