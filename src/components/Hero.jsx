@@ -25,3 +25,4 @@ export default function Hero() {
     </section>
   )
 }
+/*Yokesh is a fag */
