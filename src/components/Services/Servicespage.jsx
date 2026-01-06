@@ -33,7 +33,7 @@ const ServicesPage = () => {
       <FadeContent>
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Build, manage and scale the technology your business relies on</h1>
+          <h1 className="main-heading hero-heading">Build, manage and scale the technology your business relies on</h1>
           <p className="hero-description">
             We modernize the systems you use every day, making them easier to run.
           </p>

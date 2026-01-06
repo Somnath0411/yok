@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 export default function Header() {
   return (
     <header className="site-header">
-      <div className="container header-inner">
+      <div className="header-inner">
         <Link to="/" onClick={()=>window.scrollTo(0,0)} style={{textDecoration:"none"}}>
           <div className="brand">
             <div className="logo-dot"></div>
@@ -13,8 +13,10 @@ export default function Header() {
         </Link>
         <nav className="main-nav">
           <ul>
-            <Link to="/services" style={{textDecoration:"none"}}><li>Services</li></Link>
-            <Link to="/aboutus" style={{textDecoration:"none"}}><li>About us</li></Link>
+            <Link to="/services" style={{textDecoration:"none"}}><li className="header-tabs">Services</li></Link>
+            <Link to="/aboutus" style={{textDecoration:"none"}}><li className="header-tabs">About</li></Link>
+            <Link to="/services" style={{textDecoration:"none"}}><li className="header-tabs">Careers</li></Link>
+            <Link to="/aboutus" style={{textDecoration:"none"}}><li className="header-tabs">Education</li></Link>
           </ul>
         </nav>
         <div className="cta">

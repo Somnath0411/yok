@@ -4,7 +4,7 @@ import FadeContent from '../assets/FadeContent.jsx'
 export default function WhyChoose(){
   return (
     <div className="symbots-difference-bg">
-      <section className="why container">
+      <section className="why">
       <div className="why-inner">
         <FadeContent threshold={0.3}>
         <div className="why-text">

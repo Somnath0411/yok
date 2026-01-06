@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ServiceButton from './servicebtns'
+import FadeContent from '../../assets/FadeContent.jsx'
 
 const l1={'build':{heading:'Application Development & Modernization',
   p1:"Design and develop modern,cloud-native applications",
@@ -20,7 +21,7 @@ class Services extends Component{
     number:1
   }
   componentDidMount(){
-    this.timerId=setInterval(this.setTimer,3000)
+    this.timerId=setInterval(this.setTimer,5000)
   }
   componentWillUnmount(){
     clearInterval(this.timerId)
@@ -55,49 +56,59 @@ class Services extends Component{
   render(){ 
     const {active}=this.state; 
     return (
-    <section className="services container">
-      <div className="services-top">
-        <h2>The platform for smarter<br/>scalable transformation</h2>
-      </div>
-      <div className="services-row">
-        <ServiceButton  isactive={active==="build"} name="Build" btnfunction={this.onclickBuild}/>
-        <ServiceButton  isactive={active==="scale"} name="Scale" btnfunction={this.onclickScale}/>
-        <ServiceButton  isactive={active==="intelligence"} name="Intelligence" btnfunction={this.onclickIntelligence}/>
-      </div>
-      <div className='services-body'>
-        <img className='services-body-img'src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80&auto=format&fit=crop" alt="services" />
-        <div className='services-body-description'>
-          { active==='build' && <h2>
-            {l1.build.heading}
-          </h2>}
-          { active==='scale' && <h2>
-            {l1.scale.heading}
-          </h2>}
-          { active==='intelligence' && <h2>
-            {l1.intelligence.heading}
-          </h2>}
-          { active==='build' &&
-          <ul className='description-list'>
-           <li className='description-list-item'>{l1.build.p1}</li>
-           <li className='description-list-item'>{l1.build.p2}</li>
-           <li className='description-list-item'>{l1.build.p3}</li>
-          </ul>
-          }
-          { active==='scale' &&
-          <ul className='description-list'>
-           <li className='description-list-item'>{l1.scale.p1}</li>
-           <li className='description-list-item'>{l1.scale.p2}</li>
-           <li className='description-list-item'>{l1.scale.p3}</li>
-          </ul>
-          }
-          { active==='intelligence' &&
-          <ul className='description-list'>
-           <li className='description-list-item'>{l1.intelligence.p1}</li>
-           <li className='description-list-item'>{l1.intelligence.p2}</li>
-           <li className='description-list-item'>{l1.intelligence.p3}</li>
-          </ul>
-          }
+    <section className="services">
+      <FadeContent threshold={0.3} delay={0.2}>
+        <div className="services-top">
+          <h2>The platform for smarter<br/>scalable transformation</h2>
         </div>
+      </FadeContent>
+      <FadeContent threshold={0.3} delay={0.2}>
+        <div className="services-row">
+          <ServiceButton  isactive={active==="build"} name="Build" btnfunction={this.onclickBuild}/>
+          <ServiceButton  isactive={active==="scale"} name="Scale" btnfunction={this.onclickScale}/>
+          <ServiceButton  isactive={active==="intelligence"} name="Intelligence" btnfunction={this.onclickIntelligence}/>
+        </div>
+      </FadeContent>
+      <div className='services-body'>
+        <FadeContent threshold={0.3} delay={0.1}>
+          <img className='services-body-img'src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80&auto=format&fit=crop" alt="services" />
+        </FadeContent>
+          <div className='services-body-description'>
+            <FadeContent threshold={0.3} delay={0.1}>
+            { active==='build' && <h2>
+              {l1.build.heading}
+            </h2>}
+            { active==='scale' && <h2>
+              {l1.scale.heading}
+            </h2>}
+            { active==='intelligence' && <h2>
+              {l1.intelligence.heading}
+            </h2>}
+            </FadeContent>
+            <FadeContent threshold={0.3} delay={0.1}>
+            { active==='build' &&
+            <ul className='description-list'>
+            <li className='description-list-item'>{l1.build.p1}</li>
+            <li className='description-list-item'>{l1.build.p2}</li>
+            <li className='description-list-item'>{l1.build.p3}</li>
+            </ul>
+            }
+            { active==='scale' &&
+            <ul className='description-list'>
+            <li className='description-list-item'>{l1.scale.p1}</li>
+            <li className='description-list-item'>{l1.scale.p2}</li>
+            <li className='description-list-item'>{l1.scale.p3}</li>
+            </ul>
+            }
+            { active==='intelligence' &&
+            <ul className='description-list'>
+            <li className='description-list-item'>{l1.intelligence.p1}</li>
+            <li className='description-list-item'>{l1.intelligence.p2}</li>
+            <li className='description-list-item'>{l1.intelligence.p3}</li>
+            </ul>
+            }
+            </FadeContent>
+          </div>
       </div>
     </section>
   )
