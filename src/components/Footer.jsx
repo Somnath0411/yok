@@ -18,7 +18,7 @@ export default function Footer(){
         <div>
           <h5>NAVIGATION</h5>
           <ul>
-            <li>Home</li>
+            <Link to="/" onClick={()=>window.scrollTo(0,0)} style={{textDecoration:"none"}}><li>Home</li></Link>
             <li>Products</li>
             <Link to="/services" onClick={()=>window.scrollTo(0,0)} style={{textDecoration:"none"}}><li>Services</li></Link>
             <li>Career</li>

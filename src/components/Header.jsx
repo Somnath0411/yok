@@ -5,10 +5,12 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <div className="brand">
-          <div className="logo-dot" />
-          <div className="brand-name">Symbotz</div>
-        </div>
+        <Link to="/" onClick={()=>window.scrollTo(0,0)} style={{textDecoration:"none"}}>
+          <div className="brand">
+            <div className="logo-dot"></div>
+            <div className="brand-name">Symbotz</div>
+          </div>
+        </Link>
         <nav className="main-nav">
           <ul>
             <Link to="/services" style={{textDecoration:"none"}}><li>Services</li></Link>
