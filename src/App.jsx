@@ -2,7 +2,7 @@ import './App.css'
 import {Route,Routes} from 'react-router-dom'
 import Header from './components/Header'
 import Home from './components/Home'
-import Footer from './components/Footer'
+import Footer from './components/Footer/Footer.jsx'
 import Servicespage from './components/Services/Servicespage'
 import NotFound from './components/NotFound'
 import FadeContent from './assets/FadeContent.jsx'
@@ -15,9 +15,10 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/services" element={<Servicespage/>}/>
+            {/* <Route path="/services/build" element={<ServicesBuild/>}/> */}
             <Route path="*" element={<NotFound/>}/>
           </Routes>
-        <FadeContent><Footer /></FadeContent>
+        <Footer />
       </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ServiceButton from './servicebtns'
 import FadeContent from '../../assets/FadeContent.jsx'
+import {Link} from 'react-router-dom'
 
 const l1={'build':{heading:'Application Development & Modernization',
   p1:"Design and develop modern,cloud-native applications",
@@ -107,6 +108,7 @@ class Services extends Component{
             <li className='description-list-item'>{l1.intelligence.p3}</li>
             </ul>
             }
+            {/* <Link to="/services/build" style={{color:'blue'}}>Learn more -</Link> */}
             </FadeContent>
           </div>
       </div>

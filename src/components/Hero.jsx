@@ -6,15 +6,19 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-inner">
         <div className="hero-text">
+          <FadeContent>
             <h1 className="main-heading hero-heading">
               From idea to impact, faster than ever
             </h1>
             <p className="lead">
               Design, develop, and modernize with AI, cloud, and data at the core
             </p>
+          </FadeContent>
+          <FadeContent>
              <div className="hero-ctas">
                 <button className="btn outline">Reach us</button>
               </div>
+          </FadeContent>
         </div>
         <FadeContent>
           <div className="hero-media">
@@ -25,4 +29,3 @@ export default function Hero() {
     </section>
   )
 }
-/*Yokesh is a fag */
