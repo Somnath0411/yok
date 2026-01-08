@@ -3,19 +3,28 @@ import ServiceButton from './servicebtns'
 import FadeContent from '../../assets/FadeContent.jsx'
 import {Link} from 'react-router-dom'
 
-const l1={'build':{heading:'Application Development & Modernization',
+const l1={'build':
+  {heading:'Application Development & Modernization',
   p1:"Design and develop modern,cloud-native applications",
   p2:"Transform legacy systems into scalable, high-performance platforms",
-  p3:"Deliver secure, reliable engineering built for growth"
-},'scale':{heading:'scale',
-  p1:"scale",
-  p2:"scale",
-  p3:"scale"
-},'intelligence':{heading:'intelligence',
-  p1:"intelligence",
-  p2:"intelligence",
-  p3:"intelligence"
+  p3:"Deliver secure, reliable engineering built for growth",
+  img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1767868400/yynsbczrsolb0yt3mgih.png"
+},
+'scale':
+{heading:'Cloud Services',
+  p1:"Migrate, optimize, and manage workloads on multi-cloud environments",
+  p2:"Automate deployments with DevOps and infrastructure-as-code",
+  p3:"Improve reliability, performance, and cost efficiency at scale",
+  img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1767868400/yynsbczrsolb0yt3mgih.png"
+},
+'intelligence':
+{heading:'Data & Analytics',
+  p1:"Build data pipelines, warehouses, and real-time analytics systems",
+  p2:"Deploy predictive and AI-driven insights for better decisions",
+  p3:"Improve governance, visibility, and security across your data ecosystem",
+  img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1767868400/yynsbczrsolb0yt3mgih.png"
 }}
+
 class Services extends Component{
   state={
     active:'build',
@@ -72,54 +81,83 @@ class Services extends Component{
       </FadeContent>
       <div className='services-body'>
         <FadeContent threshold={0.3} delay={0.1}>
-          <img className='services-body-img'src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80&auto=format&fit=crop" alt="services" />
+          {
+            active==='build' && <img className='services-body-img'src={l1.build.img} alt="services" />
+          }
+          {
+            active==='scale' && <img className='services-body-img'src={l1.scale.img} alt="services" />
+          }
+          {
+            active==='intelligence' && <img className='services-body-img'src={l1.intelligence.img} alt="services" />
+          }
         </FadeContent>
-          <div className='services-body-description'>
+          <div className='services-body-description '>
             <FadeContent threshold={0.3} delay={0.1}>
-            { active==='build' && <h2>
+            { active==='build' && <h2 className='txt-33'>
               {l1.build.heading}
             </h2>}
-            { active==='scale' && <h2>
+            { active==='scale' && <h2  className='txt-33'>
               {l1.scale.heading}
             </h2>}
-            { active==='intelligence' && <h2>
+            { active==='intelligence' && <h2 className='txt-33'>
               {l1.intelligence.heading}
             </h2>}
             </FadeContent>
             <FadeContent threshold={0.3} delay={0.1}>
-            { active==='build' &&
-            <div>
-               <ul className='description-list'>
-                <li className='description-list-item'>{l1.build.p1}</li>
-                <li className='description-list-item'>{l1.build.p2}</li>
-                <li className='description-list-item'>{l1.build.p3}</li>
-              </ul>
-              <Link to="/services#build-section" style={{color:'blue'}}>Learn more-</Link> 
-            </div>
-            
-            }
-            { active==='scale' &&
-            <div>
-               <ul className='description-list'>
-                  <li className='description-list-item'>{l1.scale.p1}</li>
-                  <li className='description-list-item'>{l1.scale.p2}</li>
-                  <li className='description-list-item'>{l1.scale.p3}</li>
+              <div className="txt-19">
+              { active==='build' &&
+              <div>
+                <ul className='description-list'>
+                  <li className='description-list-item'>{l1.build.p1}</li>
+                  <li className='description-list-item'>{l1.build.p2}</li>
+                  <li className='description-list-item'>{l1.build.p3}</li>
                 </ul>
-              <Link to="/services#scale-section" style={{color:'blue'}}>Learn more-</Link> 
-            </div>
-            }
-            { active==='intelligence' &&
-            <div>
-              <ul className='description-list'>
-                <li className='description-list-item'>{l1.intelligence.p1}</li>
-                <li className='description-list-item'>{l1.intelligence.p2}</li>
-                <li className='description-list-item'>{l1.intelligence.p3}</li>
-              </ul>
-              <Link to="/services#intelligence-section" style={{color:'blue'}}>Learn more-</Link> 
-            </div>
-            
-            }
-            
+                <Link to="/services#build-section" style={{color:'blue',textDecoration:'none'}}>
+                  <div className="learn-more-link">
+                    <p>Learn more</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'-2px'}} width="18" height="18"
+                    viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                    stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></p>
+                  </div>
+                </Link> 
+              </div>
+              
+              }
+              { active==='scale' &&
+              <div>
+                <ul className='description-list '>
+                    <li className='description-list-item '>{l1.scale.p1}</li>
+                    <li className='description-list-item'>{l1.scale.p2}</li>
+                    <li className='description-list-item'>{l1.scale.p3}</li>
+                  </ul>
+                <Link to="/services#scale-section" style={{color:'blue',textDecoration:'none'}}>
+                  <div className="learn-more-link">
+                    <p>Learn more</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'-3px'}} width="18" height="18"
+                    viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                    stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></p>
+                  </div>
+                </Link> 
+              </div>
+              }
+              { active==='intelligence' &&
+              <div>
+                <ul className='description-list '>
+                  <li className='description-list-item'>{l1.intelligence.p1}</li>
+                  <li className='description-list-item'>{l1.intelligence.p2}</li>
+                  <li className='description-list-item'>{l1.intelligence.p3}</li>
+                </ul>
+                <Link to="/services#intelligence-section" style={{color:'blue',textDecoration:'none'}}>
+                <div className="learn-more-link">
+                  <p>Learn more</p>
+                  <p><svg xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'-3px'}} width="18" height="18"
+                  viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                  stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></p>
+                </div>
+                </Link> 
+              </div>
+              }
+              </div>
             </FadeContent>
           </div>
       </div>

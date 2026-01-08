@@ -24,7 +24,7 @@ export default function Hero() {
         </div>
         <FadeContent>
           <div className="hero-media">
-           <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=1200&q=80&auto=format&fit=crop" alt="team" />
+           <img src="https://res.cloudinary.com/dra2qc1c7/image/upload/v1767868395/dxkqanotstxehm17cio4.png" alt="team" />
           </div> 
         </FadeContent>
       </div>
