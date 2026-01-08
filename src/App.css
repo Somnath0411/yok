@@ -7,7 +7,7 @@
 .main-nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;color:#445}
 
 
-.hero{margin-top:96px;padding:0 120px;}
+.hero{margin-top:96px;}
 .hero-inner{display:flex;gap:40px;align-items:center;flex-direction: column;}
 .hero-text{flex:1;gap:24px;justify-content:center;display:flex;flex-direction: column;width:100%;align-items:center;text-align:center;}
 .hero-media{flex:1}
@@ -29,8 +29,8 @@
 
 .services{padding:84px 120px}
 .services-top{display:flex;gap:40px;align-items:flex-start;justify-content: center;}
-.services-top h2{font-size:44px;margin:0}
-.muted{color:var(--muted);max-width:520px}
+.services-top h2{margin:0}
+.muted{max-width:520px}
 .services-row{display:flex;gap:28px;margin-top:28px;margin-bottom:28px;}
 .service-btn{padding:8px;border-radius: 35px;border-width:1px;width: 90px;color:var(--muted1)}
 .service-btn-active{padding:8px;border-radius: 35px;border-width:1px;width: 90px;border-color:#1768ff;color:#1768ff;border-width:2px;}
@@ -39,10 +39,6 @@
 .services-body-description{width:75%;padding-top: 40px;}
 .description-list{padding:0px;}
 .description-list-item{margin:15px;}
-.service-card{background:#fff;border-radius:20px;padding:28px;flex:1;box-shadow:var(--card-shadow)}
-.service-card.highlight{background:linear-gradient(180deg,var(--blue),var(--blue-2));color:#fff}
-.service-card h3{margin-top:8px}
-.service-card p{color:var(--muted)}
 
 .symbots-difference-bg{background-color:#f8f9fb;}
 .why{padding:84px 120px}

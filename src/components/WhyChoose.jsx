@@ -9,9 +9,9 @@ export default function WhyChoose(){
         <FadeContent threshold={0.3}>
         <div className="why-text">
             <h2 className="symbotz-difference-heading">The <span className="accent">Symbotz</span> Difference</h2>
-            <p className="muted">Connect your goals to the systems that support them.
+            <p className="muted darkblue-text">Connect your goals to the systems that support them.
             Build with clarity, scale with cloud confidence, and move faster with data guiding the way.</p>
-          <div className="expertise">
+          <div className="expertise darkblue-text">
             <ul>
               <li className="active"><span className="dot active"/> Built right from the start</li>
               <li className="active"><span className="dot active"/> Scales when you need it</li>
