@@ -108,9 +108,9 @@ class Services extends Component{
               { active==='build' &&
               <div>
                 <ul className='description-list'>
-                  <li className='description-list-item'>{l1.build.p1}</li>
-                  <li className='description-list-item'>{l1.build.p2}</li>
-                  <li className='description-list-item'>{l1.build.p3}</li>
+                  <li className='description-list-item'><span className="dot active"/>{l1.build.p1}</li>
+                  <li className='description-list-item'><span className="dot active"/>{l1.build.p2}</li>
+                  <li className='description-list-item'><span className="dot active"/>{l1.build.p3}</li>
                 </ul>
                 <Link to="/services#build-section" style={{color:'blue',textDecoration:'none'}}>
                   <div className="learn-more-link">
@@ -126,9 +126,9 @@ class Services extends Component{
               { active==='scale' &&
               <div>
                 <ul className='description-list '>
-                    <li className='description-list-item '>{l1.scale.p1}</li>
-                    <li className='description-list-item'>{l1.scale.p2}</li>
-                    <li className='description-list-item'>{l1.scale.p3}</li>
+                    <li className='description-list-item active'><span className="dot active"/>{l1.scale.p1}</li>
+                    <li className='description-list-item'><span className="dot active"/>{l1.scale.p2}</li>
+                    <li className='description-list-item'><span className="dot active"/>{l1.scale.p3}</li>
                   </ul>
                 <Link to="/services#scale-section" style={{color:'blue',textDecoration:'none'}}>
                   <div className="learn-more-link">
@@ -143,9 +143,9 @@ class Services extends Component{
               { active==='intelligence' &&
               <div>
                 <ul className='description-list '>
-                  <li className='description-list-item'>{l1.intelligence.p1}</li>
-                  <li className='description-list-item'>{l1.intelligence.p2}</li>
-                  <li className='description-list-item'>{l1.intelligence.p3}</li>
+                  <li className='description-list-item'><span className="dot active"/>{l1.intelligence.p1}</li>
+                  <li className='description-list-item'><span className="dot active"/>{l1.intelligence.p2}</li>
+                  <li className='description-list-item'><span className="dot active"/>{l1.intelligence.p3}</li>
                 </ul>
                 <Link to="/services#intelligence-section" style={{color:'blue',textDecoration:'none'}}>
                 <div className="learn-more-link">

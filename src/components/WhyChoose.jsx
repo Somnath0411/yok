@@ -9,20 +9,18 @@ export default function WhyChoose(){
         <FadeContent threshold={0.3}>
         <div className="why-text ">
             <h2 className="symbotz-difference-heading">The <span className="accent prim-blue">Symbotz</span> Difference</h2>
-            <p className="muted darkblue-text">Connect your goals to the systems that support them.
+            <p className="muted darkblue-text txt-19">Connect your goals to the systems that support them.
             Build with clarity, scale with cloud confidence, and move faster with data guiding the way.</p>
-          <div className="expertise darkblue-text">
-            <ul>
+            <ul className="expertise darkblue-text txt-19">
               <li className="active"><span className="dot active"/> Built right from the start</li>
               <li className="active"><span className="dot active"/> Scales when you need it</li>
               <li className="active"><span className="dot active"/> Support that stays with you</li>
             </ul>
-          </div>
         </div>
         </FadeContent>
         <FadeContent threshold={0.3}>
           <div className="why-media">
-            <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?w=900&q=80&auto=format&fit=crop" alt="illustration" />
+            <img src="https://res.cloudinary.com/dra2qc1c7/image/upload/v1767875270/pexels-fauxels-3184405_oatkbb.jpg" alt="illustration" />
           </div>
         </FadeContent>
       </div>
