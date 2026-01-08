@@ -1,6 +1,6 @@
 const ServiceButton = (props) => {
     const {isactive,name,btnfunction}=props
-    const btnclassName= isactive? "service-btn-active" : "service-btn";
+    const btnclassName= isactive? "service-btn-active txt-19 " : "service-btn txt-19";
     const onclickButton=()=>{
       btnfunction()
     }

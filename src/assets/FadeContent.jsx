@@ -9,7 +9,7 @@ const FadeContent = ({
   initialScale = 0.9 // Slightly increased scale for a more subtle "up-scale"
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: threshold, once: false });
+  const isInView = useInView(ref, { amount: threshold, once: true });
 
   return (
     <div ref={ref}>

@@ -7,16 +7,18 @@ export default function Hero() {
       <div className="hero-inner">
         <div className="hero-text">
           <FadeContent>
-            <h1 className="main-heading hero-heading">
+            <h1 className="main-heading ">
               From idea to impact, faster than ever
             </h1>
-            <p className="lead">
+          </FadeContent>
+          <FadeContent>
+            <p className="txt-19">
               Design, develop, and modernize with AI, cloud, and data at the core
             </p>
           </FadeContent>
           <FadeContent>
              <div className="hero-ctas">
-                <button className="btn outline">Reach us</button>
+                <button className="btn outline prim-bluebg white txt-19">Reach us</button>
               </div>
           </FadeContent>
         </div>
