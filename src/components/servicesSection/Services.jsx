@@ -88,27 +88,38 @@ class Services extends Component{
             </FadeContent>
             <FadeContent threshold={0.3} delay={0.1}>
             { active==='build' &&
-            <ul className='description-list'>
-            <li className='description-list-item'>{l1.build.p1}</li>
-            <li className='description-list-item'>{l1.build.p2}</li>
-            <li className='description-list-item'>{l1.build.p3}</li>
-            </ul>
+            <div>
+               <ul className='description-list'>
+                <li className='description-list-item'>{l1.build.p1}</li>
+                <li className='description-list-item'>{l1.build.p2}</li>
+                <li className='description-list-item'>{l1.build.p3}</li>
+              </ul>
+              <Link to="/services#build-section" style={{color:'blue'}}>Learn more-</Link> 
+            </div>
+            
             }
             { active==='scale' &&
-            <ul className='description-list'>
-            <li className='description-list-item'>{l1.scale.p1}</li>
-            <li className='description-list-item'>{l1.scale.p2}</li>
-            <li className='description-list-item'>{l1.scale.p3}</li>
-            </ul>
+            <div>
+               <ul className='description-list'>
+                  <li className='description-list-item'>{l1.scale.p1}</li>
+                  <li className='description-list-item'>{l1.scale.p2}</li>
+                  <li className='description-list-item'>{l1.scale.p3}</li>
+                </ul>
+              <Link to="/services#scale-section" style={{color:'blue'}}>Learn more-</Link> 
+            </div>
             }
             { active==='intelligence' &&
-            <ul className='description-list'>
-            <li className='description-list-item'>{l1.intelligence.p1}</li>
-            <li className='description-list-item'>{l1.intelligence.p2}</li>
-            <li className='description-list-item'>{l1.intelligence.p3}</li>
-            </ul>
+            <div>
+              <ul className='description-list'>
+                <li className='description-list-item'>{l1.intelligence.p1}</li>
+                <li className='description-list-item'>{l1.intelligence.p2}</li>
+                <li className='description-list-item'>{l1.intelligence.p3}</li>
+              </ul>
+              <Link to="/services#intelligence-section" style={{color:'blue'}}>Learn more-</Link> 
+            </div>
+            
             }
-            {/* <Link to="/services/build" style={{color:'blue'}}>Learn more -</Link> */}
+            
             </FadeContent>
           </div>
       </div>

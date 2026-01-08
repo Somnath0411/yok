@@ -48,7 +48,7 @@
 .why{padding:84px 120px}
 .why-inner{display:flex;justify-content:space-between;align-items:center}
 .why-text{flex:1;}
-.why-media img{width:420px;}
+.why-media img{width:100%;}
 .symbotz-difference-heading{font-size:40px;}
 .expertise ul{list-style:none;padding:0}
 .expertise li{margin:12px 0;color:var(--muted)}

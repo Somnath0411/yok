@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import {useLocation} from 'react-router-dom'
 import './Servicespage.css';
 import AccordionDemo from '../../assets/Accordian';
 import FadeContent from '../../assets/FadeContent.jsx'
@@ -11,6 +12,19 @@ import ServicesHero from './ServicesHero'
 const ServicesPage = () => {
   // Track which service is open for each section
   const [activeAppIndex, setActiveAppIndex] = useState(0);
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.replace('#', ''));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo(0, 0); // Scroll to top if no hash
+    }
+  }, [hash]); // Runs every time the hash in the URL changes
 
   const subServices = {
     build:[{ 
@@ -67,13 +81,21 @@ const ServicesPage = () => {
       </FadeContent>
 
       {/* 2. Application Development Section */}
-      <ServicesBuild buildservices={subServices.build} />
+      <div id="build-section">
+        <ServicesBuild buildservices={subServices.build} />
+      </div>
       
       {/* 3. Cloud Infrastructure Section (Reverse) */}
-      <ServicesScale scaleservices={subServices.scale} />
+      <div id="scale-section">
+         <ServicesScale scaleservices={subServices.scale} />
+      </div>
+      
 
       {/* 4. Intelligence Section */}
-      <ServicesIntelligence intelligenceService={subServices.intelligence}/>
+      <div id="intelligence-section">
+        <ServicesIntelligence intelligenceService={subServices.intelligence}/>
+      </div>
+      
 
       {/* 5. FAQ Section with Accordion */}
       <section className="faq-section">
