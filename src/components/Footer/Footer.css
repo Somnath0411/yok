@@ -1,12 +1,19 @@
+.footer-bg{
+  background-color: var(--darkblue);
+}
+
 .footer-container {
-  background-color: var(--darkblue); /* Deep navy blue from image */
+   /* Deep navy blue from image */
   color: #ffffff;
-  padding: 96px 120px;
+  max-width: 80vw;
+  margin:auto;
+  padding: 96px 0;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 96px;
 }
 

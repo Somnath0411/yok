@@ -38,14 +38,12 @@ const ServicesPage = () => {
         img: "/app-dev-2.png" 
     },
     { title: "Legacy System Modernization", description: "Updating old tech.", img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1767951880/qvnxgm3bqvgbft726ppi.gif" },
-    { title: "Microservices & API Engineering", description: "Seamless connectivity.", img: "/app-dev-4.png" },
-    { title: "Application Management & Support", description: "24/7 reliability.", img: "/app-dev-5.png" },
-    { title: "AI & Automation Integration", description: "Smart workflows.", img: "/app-dev-6.png" } ],
+    { title: "Microservices & API Engineering", description: "Seamless connectivity.", img: "/app-dev-4.png" } ],
 
     scale:[{ 
         title: "Digital Transformation Consulting", 
         description: "Assess where you are today and build a clear roadmap to a modern, scalable digital ecosystem.",
-        img: "" 
+        img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1767951880/qvnxgm3bqvgbft726ppi.gif" 
     },
     { 
         title: "Custom Web & Mobile Development", 
@@ -53,14 +51,12 @@ const ServicesPage = () => {
         img: "/app-dev-2.png" 
     },
     { title: "Legacy System Modernization", description: "Updating old tech.", img: "/app-dev-3.png" },
-    { title: "Microservices & API Engineering", description: "Seamless connectivity.", img: "/app-dev-4.png" },
-    { title: "Application Management & Support", description: "24/7 reliability.", img: "/app-dev-5.png" },
-    { title: "AI & Automation Integration", description: "Smart workflows.", img: "/app-dev-6.png" } ],
+    { title: "Microservices & API Engineering", description: "Seamless connectivity.", img: "/app-dev-4.png" }],
   
     intelligence:[{ 
         title: "Digital Transformation Consulting", 
         description: "Assess where you are today and build a clear roadmap to a modern, scalable digital ecosystem.",
-        img: "" 
+        img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1767951880/qvnxgm3bqvgbft726ppi.gif" 
     },
     { 
         title: "Custom Web & Mobile Development", 
@@ -68,9 +64,7 @@ const ServicesPage = () => {
         img: "/app-dev-2.png" 
     },
     { title: "Legacy System Modernization", description: "Updating old tech.", img: "/app-dev-3.png" },
-    { title: "Microservices & API Engineering", description: "Seamless connectivity.", img: "/app-dev-4.png" },
-    { title: "Application Management & Support", description: "24/7 reliability.", img: "/app-dev-5.png" },
-    { title: "AI & Automation Integration", description: "Smart workflows.", img: "/app-dev-6.png" } ]
+    { title: "Microservices & API Engineering", description: "Seamless connectivity.", img: "/app-dev-4.png" }]
   };
 
   return (
@@ -98,11 +92,13 @@ const ServicesPage = () => {
       
 
       {/* 5. FAQ Section with Accordion */}
-      <section className="faq-section">
-        <div className='faq-text'/>
-          <h1 className="section-title">Still have Questions?<br/>We have answers.</h1>
+      <div className="faq-bg">
+        <section className="faq-section">
+          <h1 className="section-title txt-48">Still have Questions?<br/>We have answers.</h1>
           <div className='faq-items'><AccordionDemo /></div>
       </section>
+      </div>
+      
     </div>
   );
 };

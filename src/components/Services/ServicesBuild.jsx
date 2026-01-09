@@ -4,8 +4,21 @@ const ServicesBuild = (props) => {
   const [activeAppIndex, setActiveAppIndex] = useState(0);
  return (
     <section className="service-section">
+      <div className="service-section-badge">
+        <p>Build</p>
+        <h2 className="main-heading">Application Development & Modernization</h2>
+      </div>
+      <div className="service-content">
+        <div className=" service-image">
+          {/* The key={activeAppIndex} forces the image to re-mount and trigger CSS animations */}
+          <img 
+            src={buildservices[activeAppIndex].img} 
+            alt="Service Illustration" 
+            className="fade-in" 
+            key={activeAppIndex} 
+          />
+        </div>
         <div className="service-text">
-          <h2 className="section-title">Application Development & Modernization</h2>
           <div className="service-list">
             {buildservices.map((service, index) => (
               <div 
@@ -22,15 +35,7 @@ const ServicesBuild = (props) => {
             ))}
           </div>
         </div>
-        <div className="service-image">
-          {/* The key={activeAppIndex} forces the image to re-mount and trigger CSS animations */}
-          <img 
-            src={buildservices[activeAppIndex].img} 
-            alt="Service Illustration" 
-            className="fade-in" 
-            key={activeAppIndex} 
-          />
-        </div>
+      </div>
       </section>
  )
 }

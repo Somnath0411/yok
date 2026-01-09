@@ -47,15 +47,17 @@ export function AccordionDemo() {
       {accordionData.map((item) => (
         <div key={item.id} className="accordion-item">
           <button 
-            className={`accordion-trigger ${openItem === item.id ? 'active' : ''}`}
+            className={`accordion-trigger  ${openItem === item.id ? 'active' : ''}`}
             onClick={() => toggleItem(item.id)}
           >
-            {item.title}
+            <p className='faq-question txt-23'>
+              {item.title}
+            </p>
             <span className="chevron"></span>
           </button>
           
           <div className={`accordion-content ${openItem === item.id ? 'open' : ''}`}>
-            <div className="content-inner">
+            <div className="content-inner txt-16">
               <p>{item.content}</p>
             </div>
           </div>

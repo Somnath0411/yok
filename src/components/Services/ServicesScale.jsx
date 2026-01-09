@@ -3,9 +3,13 @@ const ServicesScale = (props) => {
   const {scaleservices}=props
   const [activeCloudIndex, setActiveCloudIndex] = useState(0);
  return (
-    <section className="service-section reverse">
-        <div className="service-text">
-          <h2 className="section-title">Cloud Infrastructure Services</h2>
+    <section className="service-section ">
+      <div className="service-section-badge">
+        <p>Scale</p>
+        <h2 className="main-heading">Cloud Infrastructure Services</h2>
+      </div>
+      <div className='service-content'>
+         <div className="service-text">
           <div className="service-list">
             {scaleservices.map((service, index) => (
               <div 
@@ -22,7 +26,7 @@ const ServicesScale = (props) => {
             ))}
           </div>
         </div>
-        <div className="service-image">
+        <div className="service-image service-image-reverse">
           <img 
             src={scaleservices[activeCloudIndex].img} 
             alt="Cloud Illustration" 
@@ -30,6 +34,7 @@ const ServicesScale = (props) => {
             key={activeCloudIndex} 
           />
         </div>
+      </div>
       </section>
  )
 }

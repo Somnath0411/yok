@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
+    <div className='footer-bg'>
+      <footer className="footer-container">
       <div className="footer-content txt-16">
         {/* Brand Section */}
         <div className="footer-section footer-title-section">
@@ -61,6 +62,8 @@ const Footer = () => {
         </div>
         </div>
     </footer>
+    </div>
+    
   );
 };
 

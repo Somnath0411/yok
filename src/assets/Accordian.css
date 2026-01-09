@@ -1,8 +1,8 @@
 .accordion-container {
   width: 100%;
-  max-width: 600px; /* Adjust as needed */
+  max-width: 900px; /* Adjust as needed */
   border-top: 1px solid #e2e8f0;
-  font-family: sans-serif;
+  color:var(--darkblue);
 }
 
 .accordion-item {
@@ -24,6 +24,10 @@
   cursor: pointer;
   transition: all 0.2s ease;
   
+}
+.faq-question{
+  color:var(--darkblue);
+  font-weight: 500;
 }
 
 .accordion-trigger:hover {
@@ -59,6 +63,7 @@
 }
 
 .content-inner {
+  font-weight: 400;
   padding: 0 0 16px 0;
   color: #475569;
   font-size: 0.95rem;

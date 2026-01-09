@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root{
-  --grey-bg:#f8f9f
+  --grey-bg:#F8F9FB;
   --muted1: #476788;
   --muted2: #A6BBD1;
   --light-blue:#E6F0FF;

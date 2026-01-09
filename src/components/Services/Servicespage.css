@@ -7,38 +7,39 @@
 
 /* Hero Section */
 .hero-section {
-  background-color: #f0f7ff;
-  padding: 80px 10%;
+  max-width:80vw;
+  margin:auto;
+  padding-top: 96px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  margin-bottom:162px;
 }
 .hero-image{
-  width:35vw;
-  height:65vh;
-  border-radius:10px;
+  width:546px;
+  height:503px;
+  border-radius:24px;
 }
 .hero-content h1 {
-  font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 24px;
-  color: #0d2b4d;
+  color: var(--darkblue);
 }
 
 .hero-description {
-  font-size: 1.125rem;
-  color: #475569;
+  color: var(--darkblue);
   max-width: 450px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  font-weight: 400;
 }
 
 /* Buttons */
 .btn-primary {
-  background-color: #0070f3;
+  background-color: var(--prim-blue);
   color: white;
-  padding: 14px 32px;
-  border-radius: 50px;
+  padding: 16px 32px;
+  border-radius: 8px;
   border: none;
   font-weight: 600;
   cursor: pointer;
@@ -51,13 +52,24 @@
 
 /* Service Detail Sections */
 .service-section {
-  padding: 80px 10%;
+  max-width:80vw;
+  margin:auto;
   display: flex;
-  align-items: flex-start;
-  gap: 80px;
+  flex-direction:column;
+  gap: 128px;
+  margin-bottom:136px;
   min-height: 600px; /* Prevents page jumping when descriptions open */
 }
-
+.service-section-badge{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+.service-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
 .service-section.reverse {
   flex-direction: row-reverse;
 }
@@ -69,16 +81,18 @@
 .service-image {
   flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: sticky;
   top: 100px; /* Keeps the image in view while hovering list */
 }
+.service-image-reverse{
+  justify-content: flex-end;
+}
 
 .service-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
+  width:600px;
+height: 473px;
+  border-radius: 30px;
 }
 
 /* Service List Items */
@@ -226,18 +240,25 @@
   }
 }
 /* FAQ Section */
+.faq-bg{
+   background-color: var(--grey-bg);
+}
 .faq-section {
-  background-color: #f9fafb;
-  padding: 80px 10%;
+  padding:80px 0;
+  max-width:80vw;
+  margin:auto;
   width:100%;
   display: flex;
+  justify-content: space-between;
 }
 .faq-section .section-title {
-  font-size: 2.5rem;
+  color:var(--darkblue);
   margin-bottom: 40px;
 }
 .faq-items {
-  padding-left: 80px;
+  width:50%;
+  display: flex;
+  justify-content: flex-end;
 }
 /* ... (rest of your CSS) */
 

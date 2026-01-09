@@ -45,9 +45,7 @@
 
 
 .hero {
-
-    margin: 96px auto 0;
-      
+  margin: 96px auto 0;   
   max-width: 80vw;
 }
 
@@ -225,7 +223,10 @@
 }
 
 .why {
-  padding: 84px 120px
+  padding-top: 84px;
+  margin:auto;
+  max-width: 80vw;
+  padding-bottom: 66px;
 }
 
 .why-inner {
