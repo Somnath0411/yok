@@ -11,7 +11,6 @@ const ServicesIntelligence = (props) => {
               <div 
                 key={index} 
                 className={`service-item ${activeAppIndex === index ? 'active' : 'inactive'}`}
-                // Changed from onClick to onMouseEnter for smoother UX
                 onMouseEnter={() => setActiveAppIndex(index)}
               >
                 <h3>{service.title}</h3>
@@ -34,4 +33,4 @@ const ServicesIntelligence = (props) => {
       </section>
  )
 }
-export default ServicesIntelligence
+export default ServicesIntelligence;

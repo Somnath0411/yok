@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 :root{
+  --grey-bg:#f8f9f
   --muted1: #476788;
   --muted2: #A6BBD1;
   --light-blue:#E6F0FF;
@@ -50,6 +51,9 @@ body{
 }
 .txt-16{
   font-size:1rem;
+}
+.txt-13{
+  font-size:0.833rem;
 }
 
 /* *{box-sizing:border-box}

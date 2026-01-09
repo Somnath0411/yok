@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom'
 
 export default function Header() {
   return (
-    <header className="site-header">
-      <div className="header-inner white-bg">
+    <header className="site-header white-bg">
+      <div className="header-inner ">
         <Link to="/" onClick={()=>window.scrollTo(0,0)} style={{textDecoration:"none"}}>
           <div className="brand">
             <div className="logo-dot"></div>
