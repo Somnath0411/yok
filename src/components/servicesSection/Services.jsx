@@ -69,7 +69,7 @@ class Services extends Component{
     <section className="services">
       <FadeContent threshold={0.3} delay={0.2}>
         <div className="services-top">
-          <h2 className="main-heading">The platform for smarter<br/>scalable transformation</h2>
+          <h1 className="main-heading">The platform for smarter scalable transformation</h1>
         </div>
       </FadeContent>
       <FadeContent threshold={0.3} delay={0.2}>
