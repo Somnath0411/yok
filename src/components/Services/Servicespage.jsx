@@ -34,43 +34,59 @@ const ServicesPage = () => {
   }
   const subServices = {
     build:[{ 
-        title: "Digital Transformation Consulting", 
-        description: "Assess where you are today and build a clear roadmap to a modern, scalable digital ecosystem.",
+        title: "Strategic assessment", 
+        description: "We review existing applications and define a clear direction aligned with business priorities and future growth plans.",
         img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1767951880/qvnxgm3bqvgbft726ppi.gif" 
     },
     { 
-        title: "Custom Web & Mobile Development", 
-        description: "Modern, secure applications built to scale across devices, users, and business needs.",
+        title: "Application engineering", 
+        description: "We design and develop secure, scalable web and mobile applications using modern engineering practices.",
         img: "/app-dev-2.png" 
     },
-    { title: "Legacy System Modernization", description: "Updating old tech.", img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1767951880/qvnxgm3bqvgbft726ppi.gif" },
-    { title: "Microservices & API Engineering", description: "Seamless connectivity.", img: "/app-dev-4.png" } ],
+    { title: "Modernization of existing platforms", 
+      description: "We enhance legacy applications to improve performance, security, and maintainability without unnecessary disruption.", 
+      img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1767951880/qvnxgm3bqvgbft726ppi.gif" },
+    { title: "Lifecycle management",
+       description: "We provide continuous support, updates, and improvements to ensure applications remain stable and effective over time.", 
+       img: "/app-dev-4.png" 
+      } 
+    ],
 
     scale:[{ 
-        title: "Digital Transformation Consulting", 
-        description: "Assess where you are today and build a clear roadmap to a modern, scalable digital ecosystem.",
+        title: "Architecture and governance", 
+        description: "We establish cloud architectures and governance models that support security, compliance, and operational clarity.",
         img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1767951880/qvnxgm3bqvgbft726ppi.gif" 
     },
     { 
-        title: "Custom Web & Mobile Development", 
-        description: "Modern, secure applications built to scale across devices, users, and business needs.",
+        title: "Migration and modernization", 
+        description: "We transition workloads to cloud environments while modernizing infrastructure for improved efficiency and resilience.",
         img: "/app-dev-2.png" 
     },
-    { title: "Legacy System Modernization", description: "Updating old tech.", img: "/app-dev-3.png" },
-    { title: "Microservices & API Engineering", description: "Seamless connectivity.", img: "/app-dev-4.png" }],
+    { title: "Managed cloud operations", 
+      description: "We provide ongoing monitoring, optimization, and maintenance to ensure availability and performance.", 
+      img: "/app-dev-3.png" },
+    { title: "DevOps and security practices",
+       description: "We implement automation, deployment pipelines, and security controls to support reliable and repeatable operations", 
+       img: "/app-dev-4.png" }],
   
     intelligence:[{ 
-        title: "Digital Transformation Consulting", 
-        description: "Assess where you are today and build a clear roadmap to a modern, scalable digital ecosystem.",
+        title: "Data architecture and strategy", 
+        description: "We establish structured data foundations aligned with business priorities and growth plans.",
         img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1767951880/qvnxgm3bqvgbft726ppi.gif" 
     },
     { 
-        title: "Custom Web & Mobile Development", 
-        description: "Modern, secure applications built to scale across devices, users, and business needs.",
+        title: "Data engineering and reliability", 
+        description: "We develop and maintain pipelines, lakes, and warehouses that ensure consistent data availability.",
         img: "/app-dev-2.png" 
     },
-    { title: "Legacy System Modernization", description: "Updating old tech.", img: "/app-dev-3.png" },
-    { title: "Microservices & API Engineering", description: "Seamless connectivity.", img: "/app-dev-4.png" }]
+    { 
+      title: "Business intelligence and insights", 
+      description: "We deliver dashboards and reporting tools that support both executive and operational decision-making.", 
+      img: "/app-dev-3.png" },
+    { 
+      title: "Advanced analytics and governance", 
+      description: "We apply predictive models, governance frameworks, and security controls to protect and maximize data value.", 
+      img: "/app-dev-4.png" }]
   };
 
   return (
