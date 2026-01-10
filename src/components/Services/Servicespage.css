@@ -76,13 +76,6 @@ pre{
   margin-bottom: 8px;  /* Optional: Centering it like in the image */
 }
 
-.width{               /*For "App Development & Modernization heading" */
-  font-size:3.5rem;
-  line-height:1.4;
-  width: 854px;
-  text-align: center;
-}
-
 .service-section-badge{
   display: flex;
   flex-direction:column;

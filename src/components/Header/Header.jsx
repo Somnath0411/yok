@@ -1,9 +1,5 @@
-<<<<<<< HEAD:src/components/Header/Header.jsx
-import React from 'react'
 import './Header.css'
-=======
 import React, { useState } from 'react'
->>>>>>> cf1f7516848b483f8e12fea6fa75e9bf1e0c583e:src/components/Header.jsx
 import {Link} from 'react-router-dom'
 
 export default function Header() {
