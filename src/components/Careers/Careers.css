@@ -19,7 +19,7 @@
 .job-card-cont{
     display:grid;
     /* grid-template-columns:minmax(30%,auto) minmax(30%,auto) minmax(30%,auto) ; */
-    grid-template-columns:repeat(4,300px);
+    grid-template-columns:repeat(3,25%);
     margin:auto;
     grid-column-gap:32px;
     grid-row-gap:100px;
@@ -55,6 +55,12 @@
     display:flex;
     flex-direction:column;
     gap:8px;
+}
+.job-card-apply{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--prim-blue);
 }
 .job-card-apply-link{
     text-decoration:none;

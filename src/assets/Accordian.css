@@ -3,6 +3,7 @@
   max-width: 900px; /* Adjust as needed */
   border-top: 1px solid #e2e8f0;
   color:var(--darkblue);
+  font-family:'poppins',sans-serif;
 }
 
 .accordion-item {

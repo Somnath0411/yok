@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ServiceButton from './servicebtns'
 import FadeContent from '../../assets/FadeContent.jsx'
 import {Link} from 'react-router-dom'
+import arrow from '../../assets/arrow.jsx'
 
 const l1={'build':
   {heading:'Application Development & Modernization',
@@ -115,9 +116,7 @@ class Services extends Component{
                 <Link to="/services#build-section" style={{color:'blue',textDecoration:'none'}}>
                   <div className="learn-more-link">
                     <p>Learn more</p>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'-2px'}} width="18" height="18"
-                    viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-                    stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></p>
+                    <p>{arrow()}</p>
                   </div>
                 </Link> 
               </div>
@@ -133,9 +132,7 @@ class Services extends Component{
                 <Link to="/services#scale-section" style={{color:'blue',textDecoration:'none'}}>
                   <div className="learn-more-link">
                     <p>Learn more</p>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'-3px'}} width="18" height="18"
-                    viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-                    stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></p>
+                    <p>{arrow()}</p>
                   </div>
                 </Link> 
               </div>
@@ -150,9 +147,7 @@ class Services extends Component{
                 <Link to="/services#intelligence-section" style={{color:'blue',textDecoration:'none'}}>
                 <div className="learn-more-link">
                   <p>Learn more</p>
-                  <p><svg xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'-3px'}} width="18" height="18"
-                  viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-                  stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></p>
+                  <p>{arrow()}</p>
                 </div>
                 </Link> 
               </div>
