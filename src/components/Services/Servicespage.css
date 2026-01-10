@@ -113,7 +113,7 @@ pre{
 }
 
 .service-image img {
-  width:600px;
+  max-width:600px;
 height: 473px;
   border-radius: 30px;
 }
