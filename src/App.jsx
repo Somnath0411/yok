@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer.jsx'
 import Servicespage from './components/Services/Servicespage'
 import NotFound from './components/NotFound'
 import FadeContent from './assets/FadeContent.jsx'
+import Careers from './components/Careers/Careers.jsx'
 
 
 const App = () => {
@@ -15,8 +16,10 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/services" element={<Servicespage/>}/>
+            <Route path="/Careers" element={<Careers/>}/>
             {/* <Route path="/services/build" element={<ServicesBuild/>}/> */}
             <Route path="*" element={<NotFound/>}/>
+
           </Routes>
         <Footer />
       </div>

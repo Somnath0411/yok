@@ -7,7 +7,7 @@
 
 /* Hero Section */
 .hero-section {
-  max-width:80vw;
+  width:80vw;
   margin:auto;
   padding-top: 96px;
   display: flex;
