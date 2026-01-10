@@ -5,8 +5,8 @@ const ServicesBuild = (props) => {
  return (
     <section className="service-section">
       <div className="service-section-badge">
-        <p>Build</p>
-        <h2 className="main-heading">Application Development & Modernization</h2>
+        <pre>Build</pre>
+        <h2 className="width">Application Development & Modernization</h2>
       </div>
       <div className="service-content">
         <div className=" service-image">

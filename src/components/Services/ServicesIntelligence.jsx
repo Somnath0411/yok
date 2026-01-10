@@ -5,7 +5,7 @@ const ServicesIntelligence = (props) => {
  return (
     <section className="service-section">
       <div className="service-section-badge">
-        <p>Intelligence</p>
+        <pre>Intelligence</pre>
         <h2 className="main-heading">Data Analytics & Decision Intelligence</h2>
       </div>
       <div className="service-content">
