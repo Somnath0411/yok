@@ -6,37 +6,37 @@ const OpeningSection = () => {
         designation:'SEO',
         jobType:'Remote: Fulltime',
         link:"Apply",
-        img:"https://static.vecteezy.com/system/resources/previews/035/504/977/non_2x/ai-generated-a-smiling-teacher-in-a-classroom-setting-free-photo.jpg"
+        img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
     },
     {
-        designation:'SEO',
+        designation:'Digital Marketing',
         jobType:'Remote: Fulltime',
         link:"Apply",
-        img:""
+        img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
     },
     {
-        designation:'SEO',
+        designation:'Video Editing',
         jobType:'Remote: Fulltime',
         link:"Apply",
-        img:""
+        img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
     },
     {
-        designation:'SEO',
+        designation:'Social Media Handler',
         jobType:'Remote: Fulltime',
         link:"Apply",
-        img:""
+        img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
     },
     {
-        designation:'SEO',
+        designation:'Developer',
         jobType:'Remote: Fulltime',
         link:"Apply",
-        img:""
+        img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
     },
     {
-        designation:'SEO',
+        designation:'Designer',
         jobType:'Remote: Fulltime',
         link:"Apply",
-        img:""
+        img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
     }
    ]
    return (
