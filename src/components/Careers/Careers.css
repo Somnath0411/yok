@@ -70,6 +70,20 @@
     gap:48px;
     padding:80px;
 }
+
+/* Responsive adjustments */
+@media (max-width:900px) {
+    .opening-section { width: 94vw; padding-bottom: 56px }
+    .job-card-cont { grid-row-gap: 56px; grid-column-gap: 20px }
+    .job-card { width: 100% }
+    .apply-section { padding: 40px 12px }
+}
+
+@media (max-width:480px) {
+    .job-card-cont { grid-template-columns: 1fr }
+    .job-card-image { height: 120px }
+    .apply-btn { padding: 12px 28px }
+}
 .apply-section-content{
     display:flex;
     flex-direction:column;
