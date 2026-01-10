@@ -1,14 +1,15 @@
 .accordion-container {
   width: 100%;
-  max-width: 900px; /* Adjust as needed */
+  max-width: 900px;
+  margin: 0 auto;
   border-top: 1px solid #e2e8f0;
-  color:var(--darkblue);
-  font-family:'poppins',sans-serif;
+  color: var(--darkblue);
+  font-family: 'poppins', sans-serif;
+  padding: 0 16px;
 }
 
 .accordion-item {
   border-bottom: 1px solid #e2e8f0;
-  
 }
 
 .accordion-trigger {
@@ -24,15 +25,20 @@
   text-align: left;
   cursor: pointer;
   transition: all 0.2s ease;
-  
+  gap: 12px;
 }
-.faq-question{
-  color:var(--darkblue);
+
+.faq-question {
+  color: var(--darkblue);
   font-weight: 500;
+  margin: 0;
+  flex: 1;
+  word-break: break-word;
 }
 
 .accordion-trigger:hover {
   text-decoration: pointer;
+  opacity: 0.8;
 }
 
 /* The Chevron Arrow */
@@ -44,6 +50,7 @@
   transform: rotate(45deg);
   transition: transform 0.2s ease;
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .accordion-trigger.active .chevron {
@@ -59,7 +66,7 @@
 }
 
 .accordion-content.open {
-  max-height: 200px; /* High enough to contain text */
+  max-height: 500px;
   opacity: 1;
 }
 
@@ -68,5 +75,83 @@
   padding: 0 0 16px 0;
   color: #475569;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+/* Tablet Devices (768px and below) */
+@media (max-width: 768px) {
+  .accordion-container {
+    padding: 0 12px;
+  }
+
+  .accordion-trigger {
+    padding: 14px 0;
+    font-size: 0.95rem;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+  }
+
+  .content-inner {
+    font-size: 0.9rem;
+    padding: 0 0 12px 0;
+  }
+
+  .chevron {
+    width: 9px;
+    height: 9px;
+    border-bottom: 1.5px solid #64748b;
+    border-right: 1.5px solid #64748b;
+    margin-right: 8px;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .accordion-container {
+    padding: 0 8px;
+  }
+
+  .accordion-trigger {
+    padding: 12px 0;
+    gap: 8px;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+  }
+
+  .content-inner {
+    font-size: 0.85rem;
+    padding: 0 0 10px 0;
+    line-height: 1.5;
+  }
+
+  .chevron {
+    width: 8px;
+    height: 8px;
+    border-bottom: 1.5px solid #64748b;
+    border-right: 1.5px solid #64748b;
+    margin-right: 6px;
+  }
+
+  .accordion-content.open {
+    max-height: 400px;
+  }
+}
+
+/* Large Desktop (1024px and above) */
+@media (min-width: 1024px) {
+  .accordion-container {
+    padding: 0 20px;
+  }
+
+  .accordion-trigger {
+    padding: 18px 0;
+  }
+
+  .content-inner {
+    font-size: 0.98rem;
+  }
 }
