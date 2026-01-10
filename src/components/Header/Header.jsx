@@ -25,7 +25,7 @@ export default function Header() {
           <span className="bar"></span>
           <span className="bar"></span>
         </button>
-        <nav className={`main-nav ${open ? 'open' : ''}`}>
+        <nav className={`main-nav white-bg ${open ? 'open' : ''}`}>
           <ul>
             <Link to="/services" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none"}}><li className="header-tabs txt-16">Services</li></Link>
             <Link to="/aboutus" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none"}}><li className="header-tabs txt-16">About</li></Link>
