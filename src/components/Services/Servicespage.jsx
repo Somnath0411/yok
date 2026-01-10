@@ -6,7 +6,7 @@ import FadeContent from '../../assets/FadeContent.jsx'
 import ServicesBuild from './ServicesBuild'
 import ServicesScale from './ServicesScale'
 import ServicesIntelligence from './ServicesIntelligence'
-import ServicesHero from './ServicesHero'
+import HeroSection from '../HeroSection.jsx'
 
 
 const ServicesPage = () => {
@@ -25,7 +25,13 @@ const ServicesPage = () => {
       window.scrollTo(0, 0); // Scroll to top if no hash
     }
   }, [hash]); // Runs every time the hash in the URL changes
-
+  
+  const heroContent = {
+    title:'What your business can rely on',
+    content:'We improve the way your core platforms run, making them easier to manage, easier to maintain, and ready to grow with your business.',
+    btn:'Reach Us',
+    img:'https://static.vecteezy.com/system/resources/previews/035/504/977/non_2x/ai-generated-a-smiling-teacher-in-a-classroom-setting-free-photo.jpg'
+  }
   const subServices = {
     build:[{ 
         title: "Digital Transformation Consulting", 
@@ -71,7 +77,7 @@ const ServicesPage = () => {
     <div className="services-container">
       {/* 1. Hero Section */}
       <FadeContent>
-        <ServicesHero/>
+        <HeroSection title={heroContent.title} description={heroContent.content} btncontent={heroContent.btn} imgsrc={heroContent.img} />
       </FadeContent>
 
       {/* 2. Application Development Section */}
