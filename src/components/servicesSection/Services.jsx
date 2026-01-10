@@ -31,7 +31,7 @@ class Services extends Component{
     number:1
   }
   componentDidMount(){
-    this.timerId=setInterval(this.setTimer,5000)
+    this.timerId=setInterval(this.setTimer,10000)
   }
   componentWillUnmount(){
     clearInterval(this.timerId)
