@@ -72,8 +72,7 @@ pre{
   color: var(--prim-blue);            
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
-  font-weight: 500;
-  margin-bottom: 8px;  /* Optional: Centering it like in the image */
+  font-weight: 500; /* Optional: Centering it like in the image */
 }
 
 .service-section-badge{
