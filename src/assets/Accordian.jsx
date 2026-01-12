@@ -49,6 +49,8 @@ export function AccordionDemo() {
           <button 
             className={`accordion-trigger  ${openItem === item.id ? 'active' : ''}`}
             onClick={() => toggleItem(item.id)}
+            onMouseEnter={() => toggleItem(item.id)}
+            onMouseLeave={() => toggleItem(item.id)}
           >
             <p className='faq-question txt-23'>
               {item.title}

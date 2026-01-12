@@ -1,7 +1,7 @@
 
 const ApplySection = () => {
    return (
-    <div className="apply-bg">\
+    <div className="apply-bg">
       <section className="apply-section">
         <div className="apply-section-content">
           <h1 className="main-heading">Let's work together</h1>

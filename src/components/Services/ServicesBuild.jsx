@@ -6,7 +6,7 @@ const ServicesBuild = (props) => {
     <section className="service-section">
       <div className="service-section-badge">
         <pre>Build</pre>
-        <h2 className="width">Application Development & Modernization</h2>
+        <h1 className="main-heading">Application Development & Modernization</h1>
       </div>
       <div className="service-content">
         <div className=" service-image">
