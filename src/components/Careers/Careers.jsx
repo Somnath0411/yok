@@ -14,6 +14,9 @@ const Careers = () => {
         <HeroSection title={heroContent.title} description={heroContent.content} btncontent={heroContent.btn} imgsrc={heroContent.img}/>
         <OpeningSection/>
         <ApplySection/>
+    <div className='spacer-100'>
+
+    </div>
     </div>
    )
 }
