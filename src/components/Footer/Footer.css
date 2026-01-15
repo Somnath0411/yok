@@ -68,7 +68,9 @@
   font-size: 14px;
   flex-wrap: wrap;
 }
-
+.legal-links{
+  margin-right: 10vw;
+}
 .legal-links a {
   color: #ffffff;
   text-decoration: none;
