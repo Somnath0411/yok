@@ -57,11 +57,17 @@
   border-radius: 8px;
   padding: 8px 16px;
 }
+.btn.primary:hover {
+  background-color: #0056b3;
+}
 
 .btn.outline {
   padding: 16px 32px;
   border-radius: 8px;
   font-weight: 600;
+}
+.btn.outline:hover {
+  background-color: #0056b3;
 }
 
 .btn.small {
@@ -121,6 +127,7 @@
   padding: 12px 32px;
   border-radius: 30px;
   border-width: 1px;
+  cursor:pointer;
   /* width: 90px; */
   border-color: var(--muted1);
   color: var(--muted1);
@@ -130,12 +137,14 @@
   padding: 12px 32px;
   border-radius: 30px;
   border-width: 1.5px;
+  cursor:pointer;
   background-color: var(--light-blue);
   /* width: 90px; */
   border-color: var(--darkblue);
   color: var(--darkblue);
 
 }
+
 
 .services-body {
   display: flex;

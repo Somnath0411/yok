@@ -22,12 +22,13 @@ const ServicesIntelligence = (props) => {
       <div className="service-content">
         <div className="service-image">
           {/* The key={activeAppIndex} forces the image to re-mount and trigger CSS animations */}
-          <img 
+          {/* <img 
             src={intelligenceService[activeAppIndex].img} 
             alt="Service Illustration" 
             className="fade-in" 
             key={activeAppIndex} 
-          />
+          /> */}
+          <video autoPlay muted className='services-body-img' src="https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4" alt="services" />
         </div>
         <div className="service-text">
           <div className="service-list">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { video } from 'framer-motion/client'
 
 const ServicesBuild = (props) => {
   const { buildservices }= props
@@ -24,12 +25,13 @@ const ServicesBuild = (props) => {
       
       <div className="service-content">
         <div className="service-image">
-          <img 
+          {/* <img 
             src={buildservices[activeAppIndex]?.img} 
             alt="Service Illustration" 
             className="fade-in" 
             key={activeAppIndex} 
-          />
+          /> */}
+          <video autoPlay muted className='services-body-img' src="https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4" alt="services" />
         </div>
 
         <div className="service-text">

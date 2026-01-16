@@ -19,10 +19,12 @@ const Footer = () => {
           <ul>
             <Link to="/About" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}><li>About</li></Link>
             <Link to="/services" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}><li>Services</li></Link>
+            <Link to="/Careers" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}>
             <div className='footer-careers'>
-              <Link to="/Careers" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}><li>Careers</li></Link>
+              <li>Careers</li>
               <div className="hiring txt-16">Hiring!</div>
             </div>
+            </Link>
             <Link to="/education" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}><li>Education</li></Link>
             <Link to="/Contact" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}><li>Contact us</li></Link>
           </ul>

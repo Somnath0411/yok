@@ -36,12 +36,13 @@ const ServicesScale = (props) => {
           </div>
         </div>
         <div className="service-image service-image-reverse">
-          <img 
+          {/* <img 
             src={scaleservices[activeCloudIndex].img} 
             alt="Cloud Illustration" 
             className="fade-in" 
             key={activeCloudIndex} 
-          />
+          /> */}
+          <video autoPlay muted className='services-body-img' src="https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4" alt="services" />
         </div>
       </div>
       </section>

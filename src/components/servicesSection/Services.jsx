@@ -87,10 +87,10 @@ class Services extends Component{
             active==='build' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
           }
           {
-            active==='scale' && <img className='services-body-img'src={l1.scale.img} alt="services" />
+            active==='scale' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
           }
           {
-            active==='intelligence' && <img className='services-body-img'src={l1.intelligence.img} alt="services" />
+            active==='intelligence' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
           }
         </FadeContent>
           <div className='services-body-description '>
