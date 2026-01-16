@@ -86,6 +86,7 @@
 .legal-links{
   display: flex;
   justify-content:flex-end;
+  margin-bottom:16px;
 }
 .legal-links a {
   color: #ffffff;
@@ -157,11 +158,6 @@
   .legal-links {
     display: flex;
     gap: 12px;
-    align-items: center;
-  }
-
-  .legal-links a {
-    margin: 0;
   }
 
   .social-icons {

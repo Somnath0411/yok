@@ -47,12 +47,12 @@ const Footer = () => {
       </div>
       
       <div className="legal-links">
-            <a href="/terms">Terms of Use</a>
-            <a href="/privacy">Privacy Policy</a>
-        </div>
+            <a className="txt-16" href="/terms">Terms of Use</a>
+            <a className="txt-16" href="/privacy">Privacy Policy</a>
+      </div>
       <div className="footer-bottom">
         <div className="small-para-section">
-          <p className="txt-13">© Copyright 2026,All Rights Reserved by Symbotz</p>
+          <p className="txt-13">© Copyright 2026, All Rights Reserved by Symbotz</p>
         </div>
         <div className="social-icons">
              {/* Replace these with your actual icon components */}
