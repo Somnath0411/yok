@@ -156,9 +156,7 @@
   }
 
   .legal-links {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
+    gap: 12px;
   }
 
   .social-icons {
@@ -215,7 +213,7 @@
     gap: 16px;
   }
   .legal-links{
-  display: flex;
-  justify-content:center;
+  gap: 12px;
+
 }
 }
