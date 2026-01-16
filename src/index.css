@@ -55,7 +55,16 @@ body{
 .txt-13{
   font-size:0.833rem;
 }
-
+@media(max-width:480px){
+  .main-heading{
+  font-size:2.074rem;
+  line-height:1.4;
+}
+.txt-19{
+  font-size:1rem;
+}
+  
+}
 /* *{box-sizing:border-box}
 html,body,#root{height:100%}
 body{margin:0;background:var(--bg);color:var(--text)} */
