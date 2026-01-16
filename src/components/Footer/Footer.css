@@ -157,6 +157,7 @@
 
   .legal-links {
     gap: 12px;
+    justify-content: center;
   }
 
   .social-icons {
