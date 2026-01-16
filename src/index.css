@@ -55,6 +55,9 @@ body{
 .txt-13{
   font-size:0.833rem;
 }
+.small-para{
+  font-size:0.833rem;
+}
 @media(max-width:480px){
   .main-heading{
   font-size:2.074rem;
@@ -62,6 +65,12 @@ body{
 }
 .txt-19{
   font-size:1rem;
+}
+.txt-16{
+  font-size:0.833rem;
+}
+.txt-13{
+  font-size:11px;
 }
   
 }

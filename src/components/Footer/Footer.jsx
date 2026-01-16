@@ -15,7 +15,7 @@ const Footer = () => {
 
         {/* Company Links */}
         <div className="footer-section">
-          <h3 className="footer-section-sub-titles">COMPANY</h3>
+          <h3 className="footer-section-sub-titles txt-19">COMPANY</h3>
           <ul>
             <Link to="/About" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}><li>About</li></Link>
             <Link to="/services" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}><li>Services</li></Link>
@@ -30,7 +30,7 @@ const Footer = () => {
 
         {/* Services Links */}
         <div className="footer-section">
-          <h3 className="footer-section-sub-titles">SERVICES</h3>
+          <h3 className="footer-section-sub-titles txt-19">SERVICES</h3>
           <ul>
             <li><Link style={{textDecoration:'none'}} to="/services#build-section">App Development</Link></li>
             <li><Link style={{textDecoration:'none'}} to="/services#scale-section">Cloud Infrastructure</Link></li>
@@ -40,7 +40,7 @@ const Footer = () => {
     
         {/* Contact Info */}
         <div className="footer-section">
-          <h3 className="footer-section-sub-titles">TALK TO US</h3>
+          <h3 className="footer-section-sub-titles txt-19">TALK TO US</h3>
           <p>+91 9962844597</p>
           <p>symbotz@gmail.com</p>
         </div>
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
       <div className="footer-bottom">
         <div className="small-para-section">
-          <p className="small-para">© Copyright 2026,All Rights Reserved by Symbotz</p>
+          <p className="txt-13">© Copyright 2026,All Rights Reserved by Symbotz</p>
         </div>
         <div className="social-icons">
              {/* Replace these with your actual icon components */}
