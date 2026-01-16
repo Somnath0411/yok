@@ -2,6 +2,15 @@ import React, { useState } from 'react';
 const ServicesScale = (props) => {
   const {scaleservices}=props
   const [activeCloudIndex, setActiveCloudIndex] = useState(0);
+  const [defaultClassName, setDefaultClassName] = useState(null);
+    const makeInactive = () => {
+    setDefaultClassName('inactive');
+  };
+
+  const makeActive = (index) => {
+    setActiveCloudIndex(index);
+    setDefaultClassName(null); // Reset when hovering a new item
+  };
  return (
     <section className="service-section ">
       <div className="service-section-badge">
@@ -14,9 +23,9 @@ const ServicesScale = (props) => {
             {scaleservices.map((service, index) => (
               <div 
                 key={index} 
-                className={`service-item ${activeCloudIndex === index ? 'active' : 'inactive'}`}
-                // Changed from onClick to onMouseEnter
-                onMouseEnter={() => setActiveCloudIndex(index)}
+                className={`service-item ${(activeCloudIndex=== index) && (defaultClassName === null) ? 'active' : 'inactive'}`}
+                onMouseEnter={() => makeActive(index)}
+                onMouseLeave={makeInactive}
               >
                 <h3>{service.title}</h3>
                 <div className="description-wrapper">

@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 const ServicesIntelligence = (props) => {
   const {intelligenceService}=props
   const [activeAppIndex, setActiveAppIndex] = useState(0);
+    const [defaultClassName, setDefaultClassName] = useState(null);
+  
+    const makeInactive = () => {
+      setDefaultClassName('inactive');
+    };
+  
+    const makeActive = (index) => {
+      setActiveAppIndex(index);
+      setDefaultClassName(null); // Reset when hovering a new item
+    };
+
  return (
     <section className="service-section">
       <div className="service-section-badge">
@@ -21,10 +32,11 @@ const ServicesIntelligence = (props) => {
         <div className="service-text">
           <div className="service-list">
             {intelligenceService.map((service, index) => (
-              <div 
+               <div 
                 key={index} 
-                className={`service-item ${activeAppIndex === index ? 'active' : 'inactive'}`}
-                onMouseEnter={() => setActiveAppIndex(index)}
+                className={`service-item ${(activeAppIndex === index) && (defaultClassName === null) ? 'active' : 'inactive'}`}
+                onMouseEnter={() => makeActive(index)}
+                onMouseLeave={makeInactive}
               >
                 <h3>{service.title}</h3>
                 <div className="description-wrapper">
