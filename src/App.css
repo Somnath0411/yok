@@ -299,6 +299,14 @@
   .services-row { gap: 12px }
 
   .footer-container, .footer-content { padding: 32px 12px }
+  .service-btn {
+  padding: 8px 24px;
+}
+
+.service-btn-active {
+  padding: 8px 24px;
+
+}
 }
 
 
