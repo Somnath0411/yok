@@ -42,6 +42,7 @@ const OpeningSection = () => {
    return (
       <div className="opening-section">
         <div className="opening-section-title">
+            <pre>Jobs</pre>
             <h1 className="main-heading">Open Roles</h1>
             <p className="txt-19">Be part of meaningful projects with people who value clear thinking and collaboration.</p>
         </div>

@@ -5,29 +5,35 @@ const FadeContent = ({
   children, 
   blur = true, 
   duration = 1.5, 
-  threshold = 0.2, // Slightly increased scale for a more subtle "up-scale"
+  // Increased threshold: Element must be 40% visible to trigger
+  threshold = 0.4, 
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: threshold, once: true });
+  
+  // The 'margin' property is key here. 
+  // "-200px" creates a buffer at the bottom of the screen.
+  const isInView = useInView(ref, { 
+    amount: threshold, 
+    once: true,
+    margin: "0px 0px -200px 0px" 
+  });
 
   return (
     <div ref={ref}>
       <motion.div
         initial={{ 
           opacity: 0, 
-          y: 40, 
-          // Reduced blur from 10px to 5px for a cleaner look
-          filter: blur ? 'blur(3px)' : 'none' 
+          y: 60, // Increased vertical offset for a more dramatic entrance
+          filter: blur ? 'blur(6px)' : 'none' 
         }}
         animate={isInView ? { 
           opacity: 1, 
-          y: 0, 
-          scale: 1, 
+          y: 0,  
           filter: 'blur(0px)' 
         } : { 
           opacity: 0, 
-          y: 40,  
-          filter: blur ? 'blur(3px)' : 'none' 
+          y: 60,  
+          filter: blur ? 'blur(6px)' : 'none' 
         }}
         transition={{ 
           duration: duration, 

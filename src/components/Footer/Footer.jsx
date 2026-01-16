@@ -44,8 +44,8 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <div className="small-para">
-          <p className="small-para">© Copyright 2026, All Rights Reserved by Symbotz</p>
+        <div className="small-para-section">
+          <p className="small-para">© Copyright 2026,All Rights Reserved by Symbotz</p>
         </div>
         <div className="legal-links">
             <a href="/terms">Terms of Use</a>

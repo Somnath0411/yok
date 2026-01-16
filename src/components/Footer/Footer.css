@@ -26,6 +26,8 @@
   margin-bottom: 30px;
 }
 
+
+
 .footer-logo {
   font-size: 28px;
   font-weight: 600;
@@ -60,17 +62,19 @@
   border-top: 1px solid white;
   padding-top: 24px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
   flex-wrap: wrap;
 }
-
+.legal-links{
+  margin-right: 10vw;
+}
 .legal-links a {
   color: #ffffff;
   text-decoration: none;
   margin-left: 30px;
-  opacity: 0.8;
 }
 
 .social-icons {
@@ -78,6 +82,7 @@
   align-items: center;
   gap: 16px;
 }
+
 
 .social-icons a {
   color: white;

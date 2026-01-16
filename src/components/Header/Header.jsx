@@ -28,9 +28,9 @@ export default function Header() {
         <nav className={`main-nav white-bg ${open ? 'open' : ''}`}>
           <ul>
             <Link to="/services" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}><li className="header-tabs txt-16">Services</li></Link>
-            <Link to="/aboutus" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}><li className="header-tabs txt-16">About</li></Link>
             <Link to="/Careers" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}><li className="header-tabs txt-16">Careers</li></Link>
-            <Link to="/Education" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}><li className="header-tabs txt-16">Education</li></Link>
+            <Link to="/Education" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}><li className="header-tabs txt-16">Learn</li></Link>
+                        <Link to="/aboutus" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}><li className="header-tabs txt-16">About</li></Link>
             <li className="mobile-cta-item">
               <button className="btn primary prim-bluebg white txt-16" onClick={closeMenu}>Contact us</button>
             </li>
