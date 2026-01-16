@@ -316,6 +316,10 @@
 .why {
   max-width: 90vw;
 }
+.services-row {
+  display: flex;
+  justify-content:center;
+}
 }
 
 
