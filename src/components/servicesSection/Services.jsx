@@ -3,13 +3,14 @@ import ServiceButton from './servicebtns'
 import FadeContent from '../../assets/FadeContent.jsx'
 import {Link} from 'react-router-dom'
 import arrow from '../../assets/arrow.jsx'
+import { video } from 'framer-motion/client'
 
 const l1={'build':
   {heading:'Application Development & Modernization',
   p1:"Design and develop modern,cloud-native applications",
   p2:"Transform legacy systems into scalable, high-performance platforms",
   p3:"Deliver secure, reliable engineering built for growth",
-  img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1767868400/yynsbczrsolb0yt3mgih.png"
+  img:"https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4"
 },
 'scale':
 {heading:'Cloud Services',
@@ -83,7 +84,7 @@ class Services extends Component{
       <div className='services-body'>
         <FadeContent threshold={0.3} delay={0.1}>
           {
-            active==='build' && <img className='services-body-img'src={l1.build.img} alt="services" />
+            active==='build' && <video autoPlay loop muted className='services-body-img'src={l1.build.img} alt="services" />
           }
           {
             active==='scale' && <img className='services-body-img'src={l1.scale.img} alt="services" />
