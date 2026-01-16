@@ -105,8 +105,7 @@ pre{
 }
 
 .service-image img {
-  max-width:600px;
-height: 473px;
+  flex:1;
   border-radius: 30px;
 }
 
