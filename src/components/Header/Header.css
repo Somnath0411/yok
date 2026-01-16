@@ -13,10 +13,6 @@
   padding:16px 0;
   max-width: 80vw;
 }
-.footer-section-sub-titles{
-    color:var(--muted2);
-}
-
 .header-tabs {
   font-weight: 500;
   padding:4px 8px;

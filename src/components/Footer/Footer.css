@@ -26,6 +26,21 @@
   margin-bottom: 30px;
 }
 
+.hiring{
+  background-color:var(--prim-blue);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width: 80px;
+  border-radius: 50px;
+}
+.footer-section-sub-titles{
+    color:var(--muted2)
+}
+.footer-careers{
+ display:flex;
+ gap: 5px;
+}
 
 
 .footer-logo {
