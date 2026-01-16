@@ -15,7 +15,7 @@ const Footer = () => {
 
         {/* Company Links */}
         <div className="footer-section">
-          <h3>COMPANY</h3>
+          <h3 className="footer-section-sub-titles">COMPANY</h3>
           <ul>
             <Link to="/About" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}><li>About</li></Link>
             <Link to="/services" style={{textDecoration:'none'}} onClick={()=>window.scrollTo(0,0)}><li>Services</li></Link>
@@ -27,7 +27,7 @@ const Footer = () => {
 
         {/* Services Links */}
         <div className="footer-section">
-          <h3>SERVICES</h3>
+          <h3 className="footer-section-sub-titles">SERVICES</h3>
           <ul>
             <li><Link style={{textDecoration:'none'}} to="/services#build-section">App Development</Link></li>
             <li><Link style={{textDecoration:'none'}} to="/services#scale-section">Cloud Infrastructure</Link></li>
@@ -37,7 +37,7 @@ const Footer = () => {
     
         {/* Contact Info */}
         <div className="footer-section">
-          <h3>TALK TO US</h3>
+          <h3 className="footer-section-sub-titles">TALK TO US</h3>
           <p>+91 9962844597</p>
           <p>symbotz@gmail.com</p>
         </div>
