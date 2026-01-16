@@ -84,7 +84,8 @@
   flex-wrap: wrap;
 }
 .legal-links{
-  margin-right: 10vw;
+  display: flex;
+  justify-content:flex-end;
 }
 .legal-links a {
   color: #ffffff;
@@ -134,12 +135,12 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
   }
 
   .footer-section {
     min-width: auto;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .footer-bottom {
@@ -217,4 +218,8 @@
   .footer-content {
     gap: 16px;
   }
+  .legal-links{
+  display: flex;
+  justify-content:center;
+}
 }

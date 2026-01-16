@@ -45,14 +45,14 @@ const Footer = () => {
           <p>symbotz@gmail.com</p>
         </div>
       </div>
-
+      
+      <div className="legal-links">
+            <a href="/terms">Terms of Use</a>
+            <a href="/privacy">Privacy Policy</a>
+        </div>
       <div className="footer-bottom">
         <div className="small-para-section">
           <p className="small-para">© Copyright 2026,All Rights Reserved by Symbotz</p>
-        </div>
-        <div className="legal-links">
-            <a href="/terms">Terms of Use</a>
-            <a href="/privacy">Privacy Policy</a>
         </div>
         <div className="social-icons">
              {/* Replace these with your actual icon components */}
