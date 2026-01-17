@@ -7,6 +7,7 @@ import Servicespage from './components/Services/Servicespage'
 import NotFound from './components/NotFound'
 import FadeContent from './assets/FadeContent.jsx'
 import Careers from './components/Careers/Careers.jsx'
+import ContactUs from './components/ContactUs/ContactUs.jsx'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/" element={<Home/>}/>
             <Route path="/services" element={<Servicespage/>}/>
             <Route path="/Careers" element={<Careers/>}/>
+            <Route path="/ContactUs" element={<ContactUs/>}/>
             {/* <Route path="/services/build" element={<ServicesBuild/>}/> */}
             <Route path="*" element={<NotFound/>}/>
 
