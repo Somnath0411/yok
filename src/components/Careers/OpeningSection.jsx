@@ -49,7 +49,6 @@ const OpeningSection = () => {
             <p className="txt-19">Be part of meaningful projects with people who value clear thinking and collaboration.</p>
         </div>
     </FadeContent>
-    <FadeContent>
         <div className="job-card-cont">
            {
            roles.map((job)=>
@@ -57,7 +56,6 @@ const OpeningSection = () => {
             )
            }
         </div>
-    </FadeContent>
       </div>
    )
 }

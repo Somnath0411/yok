@@ -17,4 +17,4 @@ const ApplySection = () => {
     </div>
    )
 }
-export default ApplySection
+export default ApplySection;
