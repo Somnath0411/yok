@@ -33,16 +33,16 @@ export default function Header() {
             <Link to="/aboutus" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}><li className="header-tabs txt-16">About</li></Link>
             <Link to="/ContactUs" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}>
             <li className="mobile-cta-item">
-              <button className="btn primary prim-bluebg white txt-16">Contact us</button>
+              <button className="btn primary prim-bluebg white txt-16" onClick={closeMenu}>Contact us</button>
             </li>
             </Link>
           </ul>
         </nav>
-        <Link to="/ContactUs" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}>
         <div className="cta">
+          <Link to="/ContactUs" onClick={()=>{window.scrollTo(0,0); closeMenu()}} style={{textDecoration:"none",listStyleType:"none"}}>
           <button className="btn primary prim-bluebg white txt-16">Contact us</button>
+          </Link>
         </div>
-        </Link>
       </div>
     </header>
   )
