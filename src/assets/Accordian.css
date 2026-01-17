@@ -84,6 +84,10 @@
     padding: 0 12px;
   }
 
+  .faq-items{
+    width: 100%;
+  }
+
   .accordion-trigger {
     padding: 14px 0;
     font-size: 0.95rem;
@@ -111,6 +115,10 @@
 @media (max-width: 480px) {
   .accordion-container {
     padding: 0 8px;
+  }
+
+  .faq-items{
+    width: 100%;
   }
 
   .accordion-trigger {

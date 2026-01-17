@@ -19,4 +19,4 @@ const JobCard = (props)=>{
   </div>
  )
 }
-export default JobCard
+export default JobCard;

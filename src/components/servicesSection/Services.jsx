@@ -84,7 +84,7 @@ class Services extends Component{
       <div className='services-body'>
         <FadeContent threshold={0.3} delay={0.1}>
           {
-            active==='build' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
+            active==='build' && <video autoPlay  muted className='services-body-img'src={l1.build.img} alt="services" />
           }
           {
             active==='scale' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
