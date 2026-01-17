@@ -16,13 +16,14 @@ const ServicesBuild = (props) => {
 
   return (
     <section className="service-section">
+      <FadeContent>
       <div className="service-section-badge">
-        <FadeContent>
         <pre>Build</pre>
         <h1 className="main-heading">Application Development & Modernization</h1>
-        </FadeContent>
       </div>
+      </FadeContent>
       <div className="service-content">
+
         <div className="service-image">
           {/* <img 
             src={buildservices[activeAppIndex]?.img} 
@@ -30,14 +31,11 @@ const ServicesBuild = (props) => {
             className="fade-in" 
             key={activeAppIndex} 
           /> */}
-          <FadeContent>
             <video autoPlay muted className='services-body-img' src="https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4" alt="services" />
-          </FadeContent>
           </div>
         <div className="service-text">
           <div className="service-list">
             {buildservices.map((service, index) => (
-              <FadeContent>
                 <div 
                 key={index} 
                 className={`service-item ${(activeAppIndex === index) && (defaultClassName === null) ? 'active' : 'inactive'}`}
@@ -49,7 +47,6 @@ const ServicesBuild = (props) => {
                   <p>{service.description}</p>
                 </div>
               </div>
-              </FadeContent>
             ))}
           </div>
         </div>

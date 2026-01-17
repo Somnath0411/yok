@@ -19,7 +19,7 @@ const FadeContent = ({
   });
 
   return (
-    <div ref={ref}>
+    <div className='fade-css' ref={ref}>
       <motion.div
         initial={{ 
           opacity: 0, 
