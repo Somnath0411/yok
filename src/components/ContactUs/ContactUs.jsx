@@ -41,7 +41,6 @@ const ContactUs = (props) => {
                 </div>
                 </div>
                 </FadeContent>
-
             </div>
           </div>
             <div className="hero-image-placeholder">

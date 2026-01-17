@@ -97,26 +97,22 @@ const ServicesPage = () => {
       </FadeContent>
 
       {/* 2. Application Development Section */}
-      <FadeContent>
       <div id="build-section">
         <ServicesBuild buildservices={subServices.build} />
       </div>
-      </FadeContent>
-
+      
       {/* 3. Cloud Infrastructure Section (Reverse) */}
-      <FadeContent>
       <div id="scale-section">
          <ServicesScale scaleservices={subServices.scale} />
       </div>
-      </FadeContent>
       
 
       {/* 4. Intelligence Section */}
-      <FadeContent>
-        <div id="intelligence-section">
+      <div id="intelligence-section">
         <ServicesIntelligence intelligenceService={subServices.intelligence}/>
       </div>
-      </FadeContent>
+      
+
       {/* 5. FAQ Section with Accordion */}
       <div className="faq-bg">
         <section className="faq-section">

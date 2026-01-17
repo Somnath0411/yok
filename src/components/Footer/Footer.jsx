@@ -1,7 +1,6 @@
 import React from 'react';
 import './Footer.css';
 import {Link} from 'react-router-dom'
-import FadeContent from '../../assets/FadeContent';
 
 const Footer = () => {
   return (
@@ -9,7 +8,7 @@ const Footer = () => {
       <footer className="footer-container">
       <div className="footer-content txt-16">
         {/* Brand Section */}
-        <div className="footer-section footer-title-section">        
+        <div className="footer-section footer-title-section">
           <h2 className="footer-logo txt-28">Symbotz</h2>
           <p className="footer-tagline">Let’s Work Together, Starting Today</p>
         </div>
