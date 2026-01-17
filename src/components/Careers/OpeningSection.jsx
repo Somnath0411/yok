@@ -53,8 +53,7 @@ const OpeningSection = () => {
             )
            }
         </div>
-
       </div>
    )
 }
-export default OpeningSection
+export default OpeningSection;
