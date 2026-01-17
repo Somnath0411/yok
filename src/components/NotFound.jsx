@@ -1,6 +1,9 @@
 const NotFound = () => {
   return (
-    <p>not found</p>
+    <div className="Not-found main-heading">
+      <p>Not Found! Under Construction</p>
+    </div>
+
   )
 }
 export default NotFound
