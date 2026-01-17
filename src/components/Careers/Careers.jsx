@@ -1,7 +1,6 @@
 import HeroSection from '../HeroSection.jsx'
 import OpeningSection from './OpeningSection'
 import ApplySection from './ApplySection'
-import FadeContent from '../../assets/FadeContent.jsx'
 
 const Careers = () => {
    const heroContent = {
@@ -12,9 +11,7 @@ const Careers = () => {
   }
    return(
     <div className="careers-section">
-        <FadeContent>
-            <HeroSection title={heroContent.title} description={heroContent.content} btncontent={heroContent.btn} imgsrc={heroContent.img}/>
-        </FadeContent>
+        <HeroSection title={heroContent.title} description={heroContent.content} btncontent={heroContent.btn} imgsrc={heroContent.img}/>
         <OpeningSection/>
         <ApplySection/>
     {/* <div className='spacer-100'>

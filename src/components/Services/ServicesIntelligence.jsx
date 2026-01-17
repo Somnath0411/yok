@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import FadeContent from '../../assets/FadeContent';
 const ServicesIntelligence = (props) => {
   const {intelligenceService}=props
   const [activeAppIndex, setActiveAppIndex] = useState(0);
@@ -17,10 +16,8 @@ const ServicesIntelligence = (props) => {
  return (
     <section className="service-section">
       <div className="service-section-badge">
-        <FadeContent>
-          <pre>Intelligence</pre>
+        <pre>Intelligence</pre>
         <h2 className="main-heading">Data Analytics & Decision Intelligence</h2>
-        </FadeContent>  
       </div>
       <div className="service-content">
         <div className="service-image">
@@ -31,15 +28,12 @@ const ServicesIntelligence = (props) => {
             className="fade-in" 
             key={activeAppIndex} 
           /> */}
-          <FadeContent>
-            <video autoPlay muted className='services-body-img' src="https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4" alt="services" />
-          </FadeContent>
+          <video autoPlay muted className='services-body-img' src="https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4" alt="services" />
         </div>
         <div className="service-text">
           <div className="service-list">
             {intelligenceService.map((service, index) => (
-              <FadeContent>
-                 <div 
+               <div 
                 key={index} 
                 className={`service-item ${(activeAppIndex === index) && (defaultClassName === null) ? 'active' : 'inactive'}`}
                 onMouseEnter={() => makeActive(index)}
@@ -50,7 +44,6 @@ const ServicesIntelligence = (props) => {
                    <p>{service.description}</p>
                 </div>
               </div>
-            </FadeContent>
             ))}
           </div>
         </div> 

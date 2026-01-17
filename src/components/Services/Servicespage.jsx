@@ -116,10 +116,8 @@ const ServicesPage = () => {
       {/* 5. FAQ Section with Accordion */}
       <div className="faq-bg">
         <section className="faq-section">
-        <FadeContent>
           <h1 className="section-title txt-48">Still have Questions?<br/>We have answers.</h1>
-         </FadeContent>
-         <div className='faq-items'><AccordionDemo /></div>
+          <div className='faq-items'><AccordionDemo /></div>
       </section>
       </div>
       

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Accordian.css';
-import FadeContent from './FadeContent';
 const accordionData = [
   {
     id: 'item-1',
@@ -44,8 +43,7 @@ export function AccordionDemo() {
   };
 
   return (
-    <FadeContent>
-      <div className="accordion-container">
+    <div className="accordion-container">
       {accordionData.map((item) => (
         <div key={item.id} className="accordion-item">
           <button 
@@ -68,8 +66,6 @@ export function AccordionDemo() {
         </div>
       ))}
     </div>
-    </FadeContent>
-    
   );
 }
 
