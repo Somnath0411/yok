@@ -8,7 +8,7 @@ const CourseCard = (props)=>{
       </div>
     <div className="course-card-description">
         <div className="course-description-content">
-          <h1 className="txt-23">{courseName}</h1>
+          <h3 className="txt-23">{courseName}</h3>
           <p className="txt-13">{description}</p>
         </div>
         <div className="course-card-duration-cont">

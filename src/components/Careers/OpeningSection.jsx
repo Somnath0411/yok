@@ -44,7 +44,7 @@ const OpeningSection = () => {
       <div className="opening-section">
         <div className="opening-section-title">
             <pre>Jobs</pre>
-            <h1 className="main-heading">Open Roles</h1>
+            <h2 className="main-heading">Open Roles</h2>
             <p className="txt-19">Be part of meaningful projects with people who value clear thinking and collaboration.</p>
         </div>
         <div className="job-card-cont">
@@ -58,7 +58,7 @@ const OpeningSection = () => {
       <div className="opening-section">
         <div className="opening-section-title">
             <pre>interns</pre>
-            <h1 className="main-heading">Internship <span>Opportunities</span></h1>
+            <h2 className="main-heading">Internship <span>Opportunities</span></h2>
             <p className="txt-19">For students and early-career learners who want pratical exposure to real world, guidance from the team, and strong foundation for their careers.</p>
         </div>
         <div className="job-card-cont">

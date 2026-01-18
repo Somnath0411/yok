@@ -7,7 +7,7 @@ export default function WhyChoose(){
       <section className="why">
       <div className="why-inner">
         <div className="why-text ">
-            <h2 className="txt-48">The <span className="accent prim-blue">Symbotz</span> Difference</h2>
+            <h2 className="txt-48">The <span className="prim-blue">Symbotz</span> Difference</h2>
             <p className="muted darkblue-text txt-19">Connect your goals to the systems that support them.
             Build with clarity, scale with cloud confidence, and move faster with data guiding the way.</p>
             <ul className="expertise darkblue-text txt-19">

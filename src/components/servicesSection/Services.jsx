@@ -70,7 +70,7 @@ class Services extends Component{
     return (
     <section className="services">
         <div className="services-top">
-          <h1 className="main-heading">The platform for smarter scalable transformation</h1>
+          <h2 className="main-heading">The platform for smarter scalable transformation</h2>
         </div>
         <div className="services-row">
           <ServiceButton  isactive={active==="build"} name="Build" btnfunction={this.onclickBuild}/>
@@ -88,15 +88,15 @@ class Services extends Component{
             active==='intelligence' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
           }
           <div className='services-body-description '>
-            { active==='build' && <h2 className='txt-33'>
+            { active==='build' && <h3 className='txt-33'>
               {l1.build.heading}
-            </h2>}
-            { active==='scale' && <h2  className='txt-33'>
+            </h3>}
+            { active==='scale' && <h3  className='txt-33'>
               {l1.scale.heading}
-            </h2>}
-            { active==='intelligence' && <h2 className='txt-33'>
+            </h3>}
+            { active==='intelligence' && <h3 className='txt-33'>
               {l1.intelligence.heading}
-            </h2>}
+            </h3>}
               <div className="txt-19">
               { active==='build' &&
               <div>

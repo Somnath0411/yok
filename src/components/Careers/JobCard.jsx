@@ -8,7 +8,7 @@ const JobCard = (props)=>{
       </div>
     <div className="job-card-description">
         <div className="job-description-content">
-          <h1 className="txt-23">{title}</h1>
+          <h3 className="txt-23">{title}</h3>
           <p className="txt-19">{type}</p>
         </div>
         <div className="job-card-apply">

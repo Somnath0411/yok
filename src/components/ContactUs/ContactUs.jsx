@@ -52,9 +52,9 @@ const ContactUs = (props) => {
       
             <div className="follow-journey-bg">
                 <div className="follow-journery-container">
-                    <p className="txt-23 follow-journey-heading">
+                    <h3 className="txt-23 follow-journey-heading">
                     FOLLOW OUR JOURNEY
-                    </p>
+                    </h3>
                     <div className="follow-socialmedia-links lg-screen">
                         <a style={{textDecoration:"none"}} href="#" aria-label="X">
                             <div className='social-media-app'>
