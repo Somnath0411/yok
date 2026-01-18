@@ -196,7 +196,7 @@
 .why-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
 
 .why-text {
@@ -258,9 +258,8 @@
   margin-bottom:162px;
 }
 .hero-image{
-  flex:1;
-  max-width:546px;
-  max-height:503px;
+  width:546px;
+  height:503px;
   border-radius:24px;
 }
 .hero-content h1 {
@@ -279,7 +278,7 @@
 
   .hero-inner,
   .why-inner {
-    flex-direction: column
+    flex-direction: column;;
   }
 
   .hero-media img {
