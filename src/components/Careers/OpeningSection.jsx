@@ -40,6 +40,7 @@ const OpeningSection = () => {
     }
    ]
    return (
+    <>
       <div className="opening-section">
         <div className="opening-section-title">
             <pre>Jobs</pre>
@@ -54,6 +55,21 @@ const OpeningSection = () => {
            }
         </div>
       </div>
+      <div className="opening-section">
+        <div className="opening-section-title">
+            <pre>interns</pre>
+            <h1 className="main-heading">Internship <span>Opportunities</span></h1>
+            <p className="txt-19">For students and early-career learners who want pratical exposure to real world, guidance from the team, and strong foundation for their careers.</p>
+        </div>
+        <div className="job-card-cont">
+           {
+           roles.map((job)=>
+             <JobCard img={job.img} title={job.designation} type={job.jobType} link={job.link}/>
+            )
+           }
+        </div>
+      </div>
+    </>
    )
 }
 export default OpeningSection;

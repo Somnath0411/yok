@@ -8,6 +8,7 @@ import NotFound from './components/NotFound'
 import FadeContent from './assets/FadeContent.jsx'
 import Careers from './components/Careers/Careers.jsx'
 import ContactUs from './components/ContactUs/ContactUs.jsx'
+import LearnPage from './components/Learn/LearnPage.jsx'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/services" element={<Servicespage/>}/>
             <Route path="/Careers" element={<Careers/>}/>
             <Route path="/ContactUs" element={<ContactUs/>}/>
+            <Route path="/learn" element={<LearnPage/>}/>
             {/* <Route path="/services/build" element={<ServicesBuild/>}/> */}
             <Route path="*" element={<NotFound/>}/>
 
