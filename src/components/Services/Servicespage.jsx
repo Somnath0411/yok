@@ -92,9 +92,7 @@ const ServicesPage = () => {
   return (
     <div className="services-container">
       {/* 1. Hero Section */}
-      <FadeContent>
         <HeroSection title={heroContent.title} description={heroContent.content} btncontent={heroContent.btn} imgsrc={heroContent.img} />
-      </FadeContent>
 
       {/* 2. Application Development Section */}
       <div id="build-section">

@@ -69,20 +69,15 @@ class Services extends Component{
     const {active}=this.state; 
     return (
     <section className="services">
-      <FadeContent threshold={0.3} delay={0.2}>
         <div className="services-top">
           <h1 className="main-heading">The platform for smarter scalable transformation</h1>
         </div>
-      </FadeContent>
-      <FadeContent threshold={0.3} delay={0.2}>
         <div className="services-row">
           <ServiceButton  isactive={active==="build"} name="Build" btnfunction={this.onclickBuild}/>
           <ServiceButton  isactive={active==="scale"} name="Scale" btnfunction={this.onclickScale}/>
           <ServiceButton  isactive={active==="intelligence"} name="Intelligence" btnfunction={this.onclickIntelligence}/>
         </div>
-      </FadeContent>
       <div className='services-body'>
-        <FadeContent threshold={0.3} delay={0.1}>
           {
             active==='build' && <video autoPlay  muted className='services-body-img'src={l1.build.img} alt="services" />
           }
@@ -92,9 +87,7 @@ class Services extends Component{
           {
             active==='intelligence' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
           }
-        </FadeContent>
           <div className='services-body-description '>
-            <FadeContent threshold={0.3} delay={0.1}>
             { active==='build' && <h2 className='txt-33'>
               {l1.build.heading}
             </h2>}
@@ -104,8 +97,6 @@ class Services extends Component{
             { active==='intelligence' && <h2 className='txt-33'>
               {l1.intelligence.heading}
             </h2>}
-            </FadeContent>
-            <FadeContent threshold={0.3} delay={0.1}>
               <div className="txt-19">
               { active==='build' &&
               <div>
@@ -154,7 +145,6 @@ class Services extends Component{
               </div>
               }
               </div>
-            </FadeContent>
           </div>
       </div>
     </section>
