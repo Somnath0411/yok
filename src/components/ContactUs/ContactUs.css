@@ -8,17 +8,29 @@
 .eachContact-card{
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.05);
     border-radius:24px;
-    width:379px;
-    height:80px;
+    width:540px;
     padding:16px 32px;
     background:white;
     display:flex;
+    align-items:center;
     gap:16px;
 }
-.contact-images{
+.contact-image-cont{
+   background-color:var(--light-blue);
+   border-radius:8px;
     height:48px;
     width:48px;
-    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center
+   
+}
+.contact-detail p{
+   max-width:264px;
+}
+.contact-images{
+    height:32px;
+    width:32px;
 }
 .contact-type{
     color:var(--muted2);

@@ -35,10 +35,8 @@
 .logo-dot {
   width: 43px;
   height: 43px;
-  left: 101px;
-  border-radius: 999px;
+  border-radius: 50%;
   background: #e9eef7;
-  display: flex;
 }
 
 .brand-name {
@@ -147,6 +145,10 @@
     gap: 8px;
      max-width: 90vw;
   }
+  .logo-dot {
+  width: 32px;
+  height: 32px;
+}
 /* .hamburger {
   display: none;
   background: none;

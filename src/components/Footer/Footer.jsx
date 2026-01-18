@@ -3,6 +3,7 @@ import './Footer.css';
 import {Link} from 'react-router-dom'
 
 const Footer = () => {
+  const date=new Date();
   return (
     <div className='footer-bg'>
       <footer className="footer-container">
@@ -54,7 +55,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="small-para-section">
-          <p className="txt-13">© Copyright 2026, All Rights Reserved by Symbotz</p>
+          <p className="txt-13">{`© Copyright ${date.getFullYear()}, All Rights Reserved by Symbotz`}</p>
         </div>
         <div className="social-icons">
              {/* Replace these with your actual icon components */}

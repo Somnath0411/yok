@@ -11,25 +11,37 @@ const ContactUs = (props) => {
             </p>
             <div className="contact-card-container">
                 <div className="eachContact-card">
-                <img src="https://static.vecteezy.com/system/resources/previews/035/504/977/non_2x/ai-generated-a-smiling-teacher-in-a-classroom-setting-free-photo.jpg" className="contact-images"/>
-                <div className="contact-detail">
-                    <p className="txt-13 contact-type">Email Us</p>
-                    <p className="txt-16">symbotz@gmail.com</p>
-                </div>
-                </div>
-                <div className="eachContact-card">
-                <img src="" className="contact-images" />
-                <div className="contact-detail">
-                    <p className="txt-13 contact-type">Call us</p>
-                    <p className="txt-16">symbotz@gmail.com</p>
-                </div>
+                    <div className="contact-image-cont">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                       stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                    </div>
+                    <div className="contact-detail">
+                        <p className="txt-13 contact-type">Email Us</p>
+                        <p className="txt-16">symbotz@gmail.com</p>
+                    </div>
                 </div>
                 <div className="eachContact-card">
-                <img src="" className="contact-images" />
-                <div className="contact-detail">
-                    <p className="txt-13 contact-type">Location</p>
-                    <p className="txt-16">symbotz@gmail.com</p>
+                    <div className="contact-image-cont">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+                    </div>
+                    <div className="contact-detail">
+                        <p className="txt-13 contact-type">Call us</p>
+                        <p className="txt-16">+91 9962844597</p>
+                    </div>
                 </div>
+                <div className="eachContact-card">
+                    <div className="contact-image-cont">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                       stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                      <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" /></svg>
+                    </div>
+                    <div className="contact-detail">
+                        <p className="txt-13 contact-type">Location</p>
+                        <p className="txt-16">No. 22/89, Ground Floor, Mc Nichols Road,Chetpet,Chennai 600031</p>
+                    </div>
                 </div>
             </div>
           </div>

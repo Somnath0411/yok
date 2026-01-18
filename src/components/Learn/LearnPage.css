@@ -26,7 +26,10 @@
     /* 1. The Gradient Overlay + The Image */
     max-width: 80vw;
     margin:auto;
+    margin-top:50px;
+    border-width:0px;
     border-radius:25px;
+    border-top-right-radius:0px;
     margin-bottom:200px;
     background-image: linear-gradient(
         to right, 
@@ -34,10 +37,10 @@
         rgba(255, 255, 255, 0.5) 60%, 
         transparent 100%
     ), 
-    url("https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    url("https://res.cloudinary.com/drzttwcyz/image/upload/v1768729392/work_vmei5p.jpg");
 
     /* 2. Sizing and Layout */
-    height: 90vh;
+    height: 70vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
@@ -49,7 +52,7 @@
     flex-direction:column;
 }
 .learn-header-content{
-    width:50%;
+    width:40%;
 }
 .course-card{
   display: flex;
@@ -84,8 +87,11 @@
 }
 .course-card-image{
   width: 100%;
-  height:153px;
+  height:100px;
   object-fit: cover;
   display: block;
+  border-top-left-radius:10px;
+  border-top-left-radius:10px;
+
 
 }

@@ -7,7 +7,7 @@ import { video } from 'framer-motion/client'
 
 const l1={'build':
   {heading:'Application Development & Modernization',
-  p1:"Design and develop modern,cloud-native applications",
+  p1:"Design and develop modern, cloud-native applications",
   p2:"Transform legacy systems into scalable, high-performance platforms",
   p3:"Deliver secure, reliable engineering built for growth",
   img:"https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4"
