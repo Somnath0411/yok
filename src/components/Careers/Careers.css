@@ -102,8 +102,8 @@
 }
 
 /* Responsive adjustments */
-@media (max-width:901px) {
-    .opening-section { width: 94vw; padding-bottom: 56px }
+@media (max-width:1025px) {
+    .opening-section { width: 80vw; padding-bottom: 56px }
     .job-card-cont { grid-row-gap: 56px; grid-column-gap: 20px }
     .job-card { width: 100% }
     .apply-section { padding: 40px 12px }

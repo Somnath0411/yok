@@ -189,7 +189,7 @@
 .why {
   padding-top: 84px;
   margin:auto;
-  max-width: 80vw;
+  width: 80vw;
   padding-bottom: 66px;
 }
 
@@ -205,9 +205,12 @@
   flex-direction: column;
   gap:24px;
 }
-
+.why-media{
+  display:flex;
+  justify-content:flex-end;
+}
 .why-media img {
-  width: 90%;
+  width: 80%;
   height:420px;
   border-radius: 24px;
 }
@@ -274,7 +277,22 @@
   margin-bottom: 24px;
   font-weight: 400;
 }
-@media (max-width:900px) {
+@media(max-width:1025px){
+  .why-media img {
+  width: 70%;
+  height:360px;
+  border-radius: 24px;
+}
+.services-body-img {
+  width: 80%;
+}
+.hero-image{
+  width:420px;
+  height:360px;
+}
+
+}
+/* @media (max-width:769px) {
 
   .hero-inner,
   .why-inner {
@@ -282,7 +300,8 @@
   }
 
   .hero-media img {
-    height: 260px
+    height: 260px;
+    width: 90vw;
   }
 
   .footer-links {
@@ -306,9 +325,11 @@
   align-items: center;
   
 }
-
-
+.services-row {
+  justify-content:center;
 }
+
+} */
 
 /* Additional responsive refinements */
 @media (max-width:769px) {
@@ -317,12 +338,12 @@
   .hero {
     margin: 48px auto 0;
     padding: 0 16px;
+    max-width: 80vw;
   }
   .hero-content{
     display:flex;
     flex-direction:column;
     align-items:center;
-    text-align:center;
   }
   .hero-media img {
     width: 100%;
@@ -332,38 +353,49 @@
    .hero-image-placeholder{
   order:-1;
  }
+ .hero-image{
+  width:80vw;
+  height:360px;
+}
 .hero-section {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 94vw;
+    width: 80vw;
     padding-top: 48px;
     margin-bottom: 48px;
   }
 
   .services, .why, .faq-section {
-    max-width: 96vw;
+    max-width: 80vw;
     margin: 48px auto;
     padding: 0 12px;
   }
+  .services-row {
+  justify-content:center;
+}
 
   .services-body, .why-inner {
     flex-direction: column;
     gap: 24px;
   }
+  .service-body-img-cont{
+    display:flex;
+    justify-content:center;
+  }
 
   .services-body-description {
     width: 100%;
     padding-top: 16px;
-    
-  }
-    .services-body-description h3 {
-    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
   }
 
   .why-media img {
-    width: 100%;
-    height: auto;
+    width: 70vw;
+    margin:auto;
+    height:320px;
   }
 
   .btn.primary, .btn.outline {
@@ -403,9 +435,19 @@
   padding-top:48px;
   text-align: center;
 }
+.why-text {
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  gap:24px;
+  text-align:justify;
+}
 .services-row {
   display: flex;
   justify-content:center;
+}
+.services-body-img {
+  width: 100%;
 }
 .hero-content{
     display:flex;
