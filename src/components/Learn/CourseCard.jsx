@@ -11,7 +11,7 @@ const CourseCard = (props)=>{
           <h3 className="txt-23">{courseName}</h3>
           <p className="txt-13">{description}</p>
         </div>
-        <div className="course-card-duration-cont">
+        <div className="course-card-duration-cont txt-13">
          <p>{duration}</p>
         </div>
     </div>
