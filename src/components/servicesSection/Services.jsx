@@ -17,14 +17,14 @@ const l1={'build':
   p1:"Migrate, optimize, and manage workloads on multi-cloud environments",
   p2:"Automate deployments with DevOps and infrastructure-as-code",
   p3:"Improve reliability, performance, and cost efficiency at scale",
-  img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1767868400/yynsbczrsolb0yt3mgih.png"
+  img:"https://res.cloudinary.com/dra2qc1c7/video/upload/v1768836098/cusstouhrnsenx0zjljl.mp4"
 },
 'intelligence':
 {heading:'Data & Analytics',
   p1:"Build data pipelines, warehouses, and real-time analytics systems",
   p2:"Deploy predictive and AI-driven insights for better decisions",
   p3:"Improve governance, visibility, and security across your data ecosystem",
-  img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1767868400/yynsbczrsolb0yt3mgih.png"
+  img:"https://res.cloudinary.com/dra2qc1c7/video/upload/v1768836098/oleb8bhktjbjb2r6urle.mp4"
 }}
 
 class Services extends Component{
@@ -83,10 +83,10 @@ class Services extends Component{
               active==='build' && <video autoPlay  muted className='services-body-img'src={l1.build.img} alt="services" />
             }
             {
-              active==='scale' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
+              active==='scale' && <video autoPlay muted className='services-body-img'src={l1.scale.img} alt="services" />
             }
             {
-              active==='intelligence' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
+              active==='intelligence' && <video autoPlay muted className='services-body-img'src={l1.intelligence.img} alt="services" />
             }
           </div>
           <div className='services-body-description '>

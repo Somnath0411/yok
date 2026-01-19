@@ -4,7 +4,7 @@ import FadeContent from '../assets/FadeContent.jsx'
 export default function WhyChoose(){
   return (
     <div className="symbots-difference-bg">
-      <section className="why">
+      <section className="why fade-up">
       <div className="why-inner lg-screen">
         <div className="why-text ">
           <h2 className="txt-48">The <span className="prim-blue">Symbotz</span> Difference</h2>
