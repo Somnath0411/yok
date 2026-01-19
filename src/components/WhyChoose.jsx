@@ -5,7 +5,7 @@ export default function WhyChoose(){
   return (
     <div className="symbots-difference-bg">
       <section className="why">
-      <div className="why-inner lg-screen">
+      <div className="why-inner ">
         <div className="why-text ">
           <h2 className="txt-48">The <span className="prim-blue">Symbotz</span> Difference</h2>
             <p className="muted darkblue-text txt-19">Connect your goals to the systems that support them.
@@ -20,7 +20,7 @@ export default function WhyChoose(){
             <img src="https://res.cloudinary.com/dra2qc1c7/image/upload/v1767875270/pexels-fauxels-3184405_oatkbb.jpg" alt="illustration" />
           </div>
       </div>
-      <div className="why-inner sm-screen">
+      {/* <div className="why-inner sm-screen">
         <h2 className="txt-48">The <span className="prim-blue">Symbotz</span> Difference</h2>
         <div className="why-text ">
             <p className="muted darkblue-text txt-19">Connect your goals to the systems that support them.
@@ -34,7 +34,7 @@ export default function WhyChoose(){
           <div className="why-media">
             <img src="https://res.cloudinary.com/dra2qc1c7/image/upload/v1767875270/pexels-fauxels-3184405_oatkbb.jpg" alt="illustration" />
           </div>
-      </div>
+      </div> */}
     </section>
     </div>
     
