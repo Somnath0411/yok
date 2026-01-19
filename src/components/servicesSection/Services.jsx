@@ -78,15 +78,17 @@ class Services extends Component{
           <ServiceButton  isactive={active==="intelligence"} name="Intelligence" btnfunction={this.onclickIntelligence}/>
         </div>
       <div className='services-body'>
-          {
-            active==='build' && <video autoPlay  muted className='services-body-img'src={l1.build.img} alt="services" />
-          }
-          {
-            active==='scale' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
-          }
-          {
-            active==='intelligence' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
-          }
+          <div className="service-body-img-cont">
+            {
+              active==='build' && <video autoPlay  muted className='services-body-img'src={l1.build.img} alt="services" />
+            }
+            {
+              active==='scale' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
+            }
+            {
+              active==='intelligence' && <video autoPlay muted className='services-body-img'src={l1.build.img} alt="services" />
+            }
+          </div>
           <div className='services-body-description '>
             { active==='build' && <h3 className='txt-33'>
               {l1.build.heading}

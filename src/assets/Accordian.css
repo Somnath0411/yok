@@ -77,9 +77,13 @@
   font-size: 0.95rem;
   line-height: 1.6;
 }
-
+@media (max-width:1025px){
+  .faq-items{
+    width: 100%;
+  }
+}
 /* Tablet Devices (768px and below) */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .accordion-container {
     padding: 0 12px;
   }

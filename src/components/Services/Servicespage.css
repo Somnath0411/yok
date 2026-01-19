@@ -252,7 +252,7 @@ pre{
 /* ... (rest of your CSS) */
 
 /* Responsive: Services page adjustments */
-@media (max-width:900px) {
+@media (max-width:1025px) {
 
 
   .service-section {
@@ -271,6 +271,11 @@ pre{
     width: 100%;
     justify-content: center;
   }
+  .service-image-reverse{
+  justify-content: center;
+  order:-1;
+}
+  
 
   .service-image img { max-width: 100%; height: auto }
 
