@@ -27,7 +27,6 @@
     /* 1. The Gradient Overlay + The Image */
     max-width: 80vw;
     margin:0 auto;
-    margin-top:50px;
     border-width:0px;
     border-radius:25px;
     border-top-right-radius:0px;
@@ -41,7 +40,7 @@
     url("https://res.cloudinary.com/drzttwcyz/image/upload/v1768729392/work_vmei5p.jpg");
 
     /* 2. Sizing and Layout */
-    height: 70vh;
+    height: 80vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
@@ -52,8 +51,18 @@
     display:flex;
     flex-direction:column;
 }
+.learn-explore-btn{
+    background-color:var(--prim-blue);
+    width: 107px;
+    height: 49px;
+    border-radius: 8px;
+    border: none;
+}
 .learn-header-content{
-    width:40%;
+    width:50%;
+    gap:40px;
+    display:flex;
+    flex-direction:column;
 }
 .course-card{
   display: flex;
@@ -87,9 +96,15 @@
     width:80vw;
     text-align: center;
     margin:auto;
-    margin-bottom:50px;
+    margin-bottom:72px;
 }
 .course-card-duration-cont{
+    background-color: var(--light-blue);
+    width:90px;
+    height:26px;
+    padding: 4px 4px;
+    border-radius: 8px;
+    color:var(--prim-blue);
 
 }
 .course-card-image{
