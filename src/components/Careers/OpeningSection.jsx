@@ -37,7 +37,7 @@ const OpeningSection = () => {
         jobType:'Remote: Fulltime',
         link:"Apply",
         img:"https://res.cloudinary.com/drzttwcyz/image/upload/v1768569727/photo-1626785774573-4b799315345d_ug4r2s.avif"
-    }
+    },
    ]
    return (
     <>

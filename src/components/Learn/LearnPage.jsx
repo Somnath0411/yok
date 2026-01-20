@@ -1,6 +1,7 @@
 import './LearnPage.css'
 import CourseCard from './CourseCard'
 import LearnHeader from './LearnHeader.jsx'
+import {Link} from 'react-router-dom'
 const LearnPage= () => {
   const courses=[{
    name:"python",
@@ -78,6 +79,10 @@ const LearnPage= () => {
     return (
       <section className="learn-section">
         <LearnHeader/>
+        <div className="courses-section-header txt-">
+          <pre>Courses</pre>
+          <h2 className="main-heading">Explore our courses</h2>
+        </div>
         <div className="course-card-cont">
             {courses.map((course)=> <CourseCard courseName={course.name} description={course.description} img={course.img} duration={course.duration}/> )}
         </div>

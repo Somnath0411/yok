@@ -83,6 +83,12 @@
     justify-content:space-between;
     gap:8px;
 }
+.courses-section-header{
+    width:80vw;
+    text-align: center;
+    margin:auto;
+    margin-bottom:50px;
+}
 .course-card-duration-cont{
 
 }
