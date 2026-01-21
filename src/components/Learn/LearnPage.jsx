@@ -1,4 +1,4 @@
-import './learnPage.css'
+import './LearnPage.css'
 import CourseCard from './CourseCard'
 import LearnHeader from './LearnHeader.jsx'
 import {Link} from 'react-router-dom'
