@@ -67,7 +67,7 @@ const LearnPage= () => {
             {courses.map((course)=> <CourseCard courseName={course.name} description={course.description} img={course.img} duration={course.duration}/> )}
         </div>
         <div className="xplore-btn-cont">
-          <Link to='/courses'  onClick={()=>{window.scrollTo(0,0); closeMenu()}}>
+          <Link to='/courses'  onClick={()=>{window.scrollTo(0,0);}}>
             <button className="xplore-all-btn white-bg txt-19">Explore all Courses</button>
           </Link>
         </div>
