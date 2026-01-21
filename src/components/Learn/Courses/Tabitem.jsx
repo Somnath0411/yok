@@ -7,7 +7,7 @@ const Tabitem = (props) => {
     func(tabId);
    }
    return(
-    <li className={`course-category-tabs ${tabClassName}`}  onClick={onClicktab}>
+    <li className={`course-category-tabs ${tabClassName} txt-16`}  onClick={onClicktab}>
        {displayText}
     </li>
    )
