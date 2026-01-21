@@ -462,6 +462,9 @@
   display: flex;
   justify-content:center;
 }
+.services-body {
+  width: 80vw;
+}
 .services-body-img {
   width: 100%;
 }
