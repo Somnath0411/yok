@@ -1,0 +1,45 @@
+.Course-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:80vw;
+    margin:auto;
+}
+.course-category-tabs-cont{
+    display: flex;
+    gap:16px;
+    align-items:center;
+    margin-bottom:70px;
+}
+.course-category-tabs{
+    padding: 4px 20px;
+    border-radius:8px;
+    display:inline;
+    color:white;
+}
+.activetab{
+  background-color:var(--prim-blue);
+}
+.tab{
+  background-color:white;
+  color:black;
+  border:solid black 1px;
+}
+
+.search-input{
+    width:300px;
+    border-radius:8px;
+    border:solid grey 1px;
+    height:35px;
+    margin-bottom:20px;
+    padding-left:20px;
+}
+.courses-Cont{
+    width:80vw;
+    display:grid;
+    grid-template-columns:repeat(4,20%);
+    margin:auto;
+    grid-row-gap:100px;
+    justify-content:space-around;
+    margin-bottom:100px;
+}
