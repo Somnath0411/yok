@@ -126,10 +126,14 @@ body{
   
 }
 .fade-right{
-  animation: fade-right 1s ease-in-out forwards;
+  animation: fade-right 1s;
+  animation-timeline: view();
+  animation-range: entry 0% exit cover 40%;
 }
 .fade-up{
-  animation: fade-up 1s ease-in-out forwards;
+  animation: fade-up 1s;
+  animation-timeline: view();
+  animation-range: entry 0% exit cover 40%;
 }
 /* *{box-sizing:border-box}
 html,body,#root{height:100%}

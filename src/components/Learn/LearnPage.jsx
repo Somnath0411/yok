@@ -7,31 +7,79 @@ const LearnPage= () => {
    Category:"",
    name:"python",
    description:"learn python in an futuristic way",
-   duration:"48 hrs",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  },
+  {
+   Category:"",
+    name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  },
+  {
+  name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  },
+  {
+  name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  },
+  {
+   name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  },
+  {
+   Category:"",
+  name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  },
+  {
+   name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
    img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
   },
   {
    Category:"",
    name:"python",
    description:"learn python in an futuristic way",
-   duration:"48 hrs",
-   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
-  },
-  {
-   Category:"",
-   name:"python",
-   description:"learn python in an futuristic way",
-   duration:"48 hrs",
-   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
-  },
-  {
-   Category:"",
-   name:"python",
-   description:"learn python in an futuristic way",
-   duration:"48 hrs",
+   duration:"🕛 48 hrs",
    img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
   },
   
+  {
+   name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  },
+  {
+   name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  },
+  {
+  name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  },
+  {
+   name:"python",
+   description:"learn python in an futuristic way",
+   duration:"🕛 48 hrs",
+   img:"https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+  }
 ]
     return (
       <section className="learn-section">
