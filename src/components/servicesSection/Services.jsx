@@ -80,13 +80,13 @@ class Services extends Component{
       <div className='services-body'>
           <div className="service-body-img-cont">
             {
-              active==='build' && <video autoPlay  muted className='services-body-img'src={l1.build.img} alt="services" />
+              active==='build' && <video autoPlay  muted className='services-body-img' src={l1.build.img}  alt="services" />
             }
             {
-              active==='scale' && <video autoPlay muted className='services-body-img'src={l1.scale.img} alt="services" />
+              active==='scale' && <video autoPlay muted className='services-body-img' src={l1.scale.img} alt="services" />
             }
             {
-              active==='intelligence' && <video autoPlay muted className='services-body-img'src={l1.intelligence.img} alt="services" />
+              active==='intelligence' && <video autoPlay muted className='services-body-img' src={l1.intelligence.img} alt="services" />
             }
           </div>
           <div className='services-body-description '>
