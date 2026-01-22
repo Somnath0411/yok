@@ -43,7 +43,7 @@
 
     /* 2. Sizing and Layout */
     height: 80vh;
-    width: 100vw;
+    width:100%;
     background-size: cover;
     background-position: center;
     
@@ -140,25 +140,44 @@
         grid-row-gap:80px;
     }
     .learn-header-section {
-        height: 60vh;
+        height: 80vh;
         background-position: center;
+        padding-left:20px;
     }
     .learn-header-content{
         width:60%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .course-card-cont{
         grid-template-columns:repeat(2,45%);
         grid-row-gap:50px;
     }
     .learn-header-section {
-        height: 50vh;
+        height: 80vh;;
         background-position: center;
     }
     .learn-header-content{
         width:80%;
     }
+}
+@media(max-width: 640px){
+    .learn-header-section {
+    /* 1. The Gradient Overlay + The Image */
+    max-width: 80vw;
+    background-image: linear-gradient(
+        to bottom, 
+        white 10%, 
+        rgba(255, 255, 255, 0.5) 60%, 
+        transparent 100%
+    ), 
+    url("https://res.cloudinary.com/drzttwcyz/image/upload/v1768729392/work_vmei5p.jpg");
+
+    /* 2. Sizing and Layout */
+    height: 90vh;
+    padding-left:20px;
+    width:100%;
+}
 }
 @media (max-width: 480px) {
     .course-card-cont{
@@ -172,4 +191,19 @@
     .learn-header-content{
         width:80%;
     }
+    .learn-header-section {
+    /* 1. The Gradient Overlay + The Image */
+    max-width: 90vw;
+    background-image: linear-gradient(
+        to bottom, 
+        white 10%, 
+        rgba(255, 255, 255, 0.5) 50%, 
+        transparent 100%
+    ), 
+    url("https://res.cloudinary.com/drzttwcyz/image/upload/v1768729392/work_vmei5p.jpg");
+
+    /* 2. Sizing and Layout */
+    height: 90vh;
+    width: 100%;
+}
 }
