@@ -9,7 +9,7 @@ const LearnPage= () => {
     name: "UI/UX Training",
     description: "Master the fundamentals of supervised and unsupervised learning algorithms.",
     duration: "60 hrs",
-    img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1768029525/xufhduongclasyxd9c2u.jpg"
+    img: "https://unsplash.com/photos/a-black-cell-phone-uT7l-Ds81YM"
   },
   {
     Category: "DESIGN & USER EXPERIENCE",
