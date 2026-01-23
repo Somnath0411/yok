@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { video } from 'framer-motion/client'
+import { motion } from 'framer-motion'
 
 const ServicesBuild = (props) => {
   const { buildservices }= props
@@ -17,13 +17,25 @@ const ServicesBuild = (props) => {
   };
 
   return (
-    <section className="service-section">
-      <div className="service-section-badge">
+    <motion.section className="service-section"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+      viewport={{ once: true }}>
+      <motion.div className="service-section-badge"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.2 }}
+        viewport={{ once: true }}>
         <pre>Build</pre>
         <h2 className="main-heading">Application Development & Modernization</h2>
-      </div>
+      </motion.div>
       
-      <div className="service-content">
+      <motion.div className="service-content"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.4 }}
+        viewport={{ once: true }}>
         <div className="service-image">
           {/* <img 
             src={buildservices[activeAppIndex]?.img} 
@@ -51,8 +63,8 @@ const ServicesBuild = (props) => {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

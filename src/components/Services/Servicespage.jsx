@@ -7,6 +7,7 @@ import ServicesBuild from './ServicesBuild'
 import ServicesScale from './ServicesScale'
 import ServicesIntelligence from './ServicesIntelligence'
 import HeroSection from '../HeroSection.jsx'
+import { motion } from 'framer-motion'
 
 
 const ServicesPage = () => {
@@ -114,8 +115,16 @@ const ServicesPage = () => {
       {/* 5. FAQ Section with Accordion */}
       <div className="faq-bg">
         <section className="faq-section">
-          <h2 className="section-title txt-48">Still have Questions?<br/>We have answers.</h2>
-          <div className='faq-items'><AccordionDemo /></div>
+          <motion.h2 className="section-title txt-48"
+            initial={{ opacity: 0, y:50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2}}
+            viewport={{once:true}}>Still have Questions?<br/>We have answers.</motion.h2>
+          <motion.div className='faq-items'
+            initial={{ opacity: 0, y:50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: 0.3}}
+            viewport={{once:true}}><AccordionDemo /></motion.div>
       </section>
       </div>
       

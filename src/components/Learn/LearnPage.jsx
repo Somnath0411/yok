@@ -2,6 +2,7 @@ import './LearnPage.css'
 import CourseCard from './CourseCard'
 import LearnHeader from './LearnHeader.jsx'
 import {Link} from 'react-router-dom'
+import { motion } from 'framer-motion'
 const LearnPage= () => {
   const courses=[
    {
@@ -61,6 +62,24 @@ const LearnPage= () => {
     img: "https://miro.medium.com/v2/resize:fit:1400/1*6tiErTf3IPqBXR9bqR1lDg.png"
   }
 ]
+    const containerVariants = {
+      hidden: { opacity: 0 },
+      visible: {
+        opacity: 1,
+        transition: {
+          staggerChildren: 0.15,
+          delayChildren: 0.1,
+        },
+      },
+    }
+    const cardVariants = {
+      hidden: { opacity: 0, y: 50 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: 'easeOut' },
+      },
+    }
     return (
       <section className="learn-section">
         <LearnHeader/>
@@ -68,9 +87,9 @@ const LearnPage= () => {
           <pre>Courses</pre>
           <h2 className="main-heading">Explore our courses</h2>
         </div>
-        <div className="course-card-cont">
-            {courses.map((course)=> <CourseCard courseName={course.name} description={course.description} img={course.img} duration={course.duration}/> )}
-        </div>
+        <motion.div className="course-card-cont" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "0px 0px -100px 0px" }}>
+            {courses.map((course)=> <CourseCard key={course.name} courseName={course.name} description={course.description} img={course.img} duration={course.duration} variants={cardVariants}/> )}
+        </motion.div>
         <div className="xplore-btn-cont">
           <Link to='/courses'  onClick={()=>{window.scrollTo(0,0);}}>
             <button className="xplore-all-btn white-bg txt-19">Explore all Courses</button>

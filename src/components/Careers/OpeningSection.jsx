@@ -1,6 +1,27 @@
 import JobCard from './JobCard'
+import { motion } from 'framer-motion'
 import './Careers.css'
 const OpeningSection = () => {
+   const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.5,
+      },
+    },
+  }
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: 'easeOut' },
+    },
+  }
+
    const roles = [
     {
         designation:'SEO',
@@ -41,34 +62,50 @@ const OpeningSection = () => {
    ]
    return (
     <>
-      <div className="opening-section">
-        <div className="opening-section-title">
+      <motion.div className="opening-section"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}>
+        <motion.div className="opening-section-title"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, delay: 0.2 }}
+          viewport={{ once: true }}>
             <pre>Jobs</pre>
             <h2 className="main-heading">Open Roles</h2>
             <p className="txt-19">Be part of meaningful projects with people who value clear thinking and collaboration.</p>
-        </div>
-        <div className="job-card-cont">
+        </motion.div>
+        <motion.div className="job-card-cont" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: "some", margin: "0px 0px -50px 0px" }}>
            {
            roles.map((job)=>
-             <JobCard img={job.img} title={job.designation} type={job.jobType} link={job.link}/>
+             <JobCard key={job.designation} img={job.img} title={job.designation} type={job.jobType} link={job.link} variants={cardVariants}/>
             )
            }
-        </div>
-      </div>
-      <div className="opening-section">
-        <div className="opening-section-title">
+        </motion.div>
+      </motion.div>
+      <motion.div className="opening-section"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}>
+        <motion.div className="opening-section-title"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, delay: 0.2 }}
+          viewport={{ once: true }}>
             <pre>interns</pre>
             <h2 className="main-heading">Internship <span>Opportunities</span></h2>
             <p className="txt-19">For students and early-career learners who want pratical exposure to real world, guidance from the team, and strong foundation for their careers.</p>
-        </div>
-        <div className="job-card-cont">
+        </motion.div>
+        <motion.div className="job-card-cont" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: "some", margin: "0px 0px -50px 0px" }}>
            {
            roles.map((job)=>
-             <JobCard img={job.img} title={job.designation} type={job.jobType} link={job.link}/>
+             <JobCard key={job.designation} img={job.img} title={job.designation} type={job.jobType} link={job.link} variants={cardVariants}/>
             )
            }
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
    )
 }

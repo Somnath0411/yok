@@ -10,18 +10,31 @@ export default function WhyChoose(){
         <div className="why-text ">
           <motion.h2 className="txt-48"initial={{ opacity: 0, y:50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 2}}>The <span className="prim-blue">Symbotz</span> Difference</motion.h2>
-            <p className="muted darkblue-text txt-19">Connect your goals to the systems that support them.
-            Build with clarity, scale with cloud confidence, and move faster with data guiding the way.</p>
-            <ul className="expertise darkblue-text txt-19">
+                transition={{ duration: 2}}
+                viewport={{once:true}}>The <span className="prim-blue">Symbotz</span> Difference</motion.h2>
+            <motion.p className="muted darkblue-text txt-19"
+              initial={{ opacity: 0, y:50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2, delay: 0.3}}
+              viewport={{once:true}}>Connect your goals to the systems that support them.
+            Build with clarity, scale with cloud confidence, and move faster with data guiding the way.</motion.p>
+            <motion.ul className="expertise darkblue-text txt-19"
+              initial={{ opacity: 0, y:50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2, delay: 0.6}}
+              viewport={{once:true}}>
               <li className="active"><span className="dot active"/> Built right from the start</li>
               <li className="active"><span className="dot active"/> Scales when you need it</li>
               <li className="active"><span className="dot active"/> Support that stays with you</li>
-            </ul>
+            </motion.ul>
         </div>
-          <div className="why-media">
+          <motion.div className="why-media"
+            initial={{ opacity: 0, y:50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: 0.9}}
+            viewport={{once:true}}>
             <img src="https://res.cloudinary.com/dra2qc1c7/image/upload/v1767875270/pexels-fauxels-3184405_oatkbb.jpg" alt="illustration" />
-          </div>
+          </motion.div>
       </div>
       {/* <div className="why-inner sm-screen">
         <h2 className="txt-48">The <span className="prim-blue">Symbotz</span> Difference</h2>

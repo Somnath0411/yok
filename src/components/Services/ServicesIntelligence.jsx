@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion'
 const ServicesIntelligence = (props) => {
   const {intelligenceService}=props
   const [activeAppIndex, setActiveAppIndex] = useState(0);
@@ -14,12 +15,24 @@ const ServicesIntelligence = (props) => {
     };
 
  return (
-    <section className="service-section">
-      <div className="service-section-badge">
+    <motion.section className="service-section"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+      viewport={{ once: true }}>
+      <motion.div className="service-section-badge"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.2 }}
+        viewport={{ once: true }}>
         <pre>Intelligence</pre>
         <h2 className="main-heading">Data Analytics & Decision Intelligence</h2>
-      </div>
-      <div className="service-content">
+      </motion.div>
+      <motion.div className="service-content"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.4 }}
+        viewport={{ once: true }}>
         <div className="service-image">
           {/* The key={activeAppIndex} forces the image to re-mount and trigger CSS animations */}
           {/* <img 
@@ -47,8 +60,8 @@ const ServicesIntelligence = (props) => {
             ))}
           </div>
         </div> 
-      </div>        
-      </section>
+      </motion.div>        
+      </motion.section>
  )
 }
 export default ServicesIntelligence;

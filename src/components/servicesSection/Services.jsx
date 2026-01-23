@@ -3,7 +3,7 @@ import ServiceButton from './servicebtns'
 import FadeContent from '../../assets/FadeContent.jsx'
 import {Link} from 'react-router-dom'
 import arrow from '../../assets/arrow.jsx'
-import { video } from 'framer-motion/client'
+import { motion } from 'framer-motion'
 
 const l1={'build':
   {heading:'Application Development & Modernization',
@@ -70,14 +70,41 @@ class Services extends Component{
     return (
     <section className="services">
         <div className="services-top">
-          <h2 className="main-heading">The platform for smarter scalable transformation</h2>
+          <motion.h2 className="main-heading"
+            initial={{ opacity: 0, y:50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2}}
+            viewport={{once:true}}>The platform for smarter scalable transformation</motion.h2>
         </div>
         <div className="services-row">
-          <ServiceButton  isactive={active==="build"} name="Build" btnfunction={this.onclickBuild}/>
-          <ServiceButton  isactive={active==="scale"} name="Scale" btnfunction={this.onclickScale}/>
-          <ServiceButton  isactive={active==="intelligence"} name="Intelligence" btnfunction={this.onclickIntelligence}/>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: 0.3 }}
+            viewport={{ once: true }}>
+            <ServiceButton  isactive={active==="build"} name="Build" btnfunction={this.onclickBuild}/>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: 0.4 }}
+            viewport={{ once: true }}>
+            <ServiceButton  isactive={active==="scale"} name="Scale" btnfunction={this.onclickScale}/>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: 0.5 }}
+            viewport={{ once: true }}>
+            <ServiceButton  isactive={active==="intelligence"} name="Intelligence" btnfunction={this.onclickIntelligence}/>
+          </motion.div>
         </div>
-      <div className='services-body'>
+      <motion.div className='services-body'
+        key={active}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.6 }}
+        viewport={{ once: true }}>
           <div className="service-body-img-cont">
             {
               active==='build' && <video autoPlay  muted className='services-body-img' src={l1.build.img}  alt="services" />
@@ -148,7 +175,7 @@ class Services extends Component{
               }
               </div>
           </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

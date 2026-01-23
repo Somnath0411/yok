@@ -8,16 +8,16 @@ export default function Hero() {
       <div className="hero-inner">
         <div className="hero-text">
             <motion.h1 className="main-heading"
-                initial={{ opacity: 0, x:-50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 2,delay:0.5}}
+                initial={{ opacity: 0, y:50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay:0.5, ease: 'easeInOut'}}
                 viewport={{once:true}}>
               From idea to impact, faster than ever
            </motion.h1>
             <motion.p className="txt-19"
               initial={{ opacity: 0, y:50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2,delay:1}}
+              transition={{ duration: 2, delay:1, ease: 'easeInOut'}}
                viewport={{once:true}}>
               Design, develop, and modernize with AI, cloud, and data at the core
             </motion.p>
@@ -25,7 +25,7 @@ export default function Hero() {
                 <motion.button className="btn outline prim-bluebg white txt-19"             
                 initial={{ opacity: 0, y:50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 2,delay:1.5}}
+                transition={{ duration: 2, delay:1.5, ease: 'easeInOut'}}
                 viewport={{once:true}}>
                 Reach us
               </motion.button>
@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="hero-media ">
            <motion.img initial={{ opacity: 0, y:50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 2,delay:2}}
+                transition={{ duration: 2, delay:2, ease: 'easeInOut'}}
                  viewport={{once:true}}
                 src="https://res.cloudinary.com/dra2qc1c7/image/upload/v1767868395/dxkqanotstxehm17cio4.png" alt="team" />
           </div> 

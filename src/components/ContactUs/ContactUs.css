@@ -1,5 +1,3 @@
-
-
 .contact-card-container{
     display:flex;
     flex-direction:column;
@@ -71,10 +69,22 @@
 @media(max-width:769px){
     .follow-socialmedia-links{
     gap:90px;
+
+}
+.hero-img{
+    width: 300px;
+    height: 300px;
 }
 }
 @media (max-width:480px){
-    .follow-socialmedia-links{
+.hero-img{
+    width: 250px;
+    height: 250px;
+}
+.hero-section{
+    width: 90vw;
+}
+.follow-socialmedia-links{
     gap:50px;
 }
 .lg-screen{
@@ -83,12 +93,13 @@
 .sm-screen{
     display: flex;
 }
+
 .eachContact-card{
     width:280px;
     height:80px;
-    padding:16px 32px;
+    padding:8px 8px;
     background:white;
     display:flex;
-    gap:16px;
+    gap:6px;
 }
 }

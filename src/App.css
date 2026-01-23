@@ -13,8 +13,7 @@
 }
 
 .hero-text {
-  flex: 1;
-  gap: 24px;
+  gap: 40px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -24,7 +23,7 @@
 }
 
 .hero-media {
-  flex: 1
+  flex: 1;
 }
 
 .hero-media img {
@@ -481,8 +480,8 @@
   width: 90vw;
 }
 .services-body-img {
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
 }
 .hero-content{
     display:flex;

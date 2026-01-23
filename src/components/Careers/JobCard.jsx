@@ -1,8 +1,9 @@
 import arrow from '../../assets/arrow.jsx'
+import { motion } from 'framer-motion'
 const JobCard = (props)=>{
  const {img, title, type, link} = props
  return(
-  <div className="job-card">
+  <motion.div className="job-card" variants={props.variants}>
     <div className="job-card-image-wrapper">
       <img className="job-card-image" src={img} alt="" />
       </div>
@@ -16,7 +17,7 @@ const JobCard = (props)=>{
         <p>{arrow()}</p>
         </div>
     </div>
-  </div>
+  </motion.div>
  )
 }
 export default JobCard;

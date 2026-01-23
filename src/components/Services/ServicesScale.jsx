@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion'
 const ServicesScale = (props) => {
   const {scaleservices}=props
   const [activeCloudIndex, setActiveCloudIndex] = useState(0);
@@ -12,12 +13,24 @@ const ServicesScale = (props) => {
     setDefaultClassName(null); // Reset when hovering a new item
   };
  return (
-    <section className="service-section ">
-      <div className="service-section-badge">
+    <motion.section className="service-section "
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+      viewport={{ once: true }}>
+      <motion.div className="service-section-badge"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.2 }}
+        viewport={{ once: true }}>
         <pre>Scale</pre>
         <h2 className="main-heading">Cloud Infrastructure Services</h2>
-      </div>
-      <div className='service-content'>
+      </motion.div>
+      <motion.div className='service-content'
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.4 }}
+        viewport={{ once: true }}>
          <div className="service-text">
           <div className="service-list">
             {scaleservices.map((service, index) => (
@@ -44,8 +57,8 @@ const ServicesScale = (props) => {
           /> */}
           <video autoPlay muted className='services-body-img' src="https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4" alt="services" />
         </div>
-      </div>
-      </section>
+      </motion.div>
+      </motion.section>
  )
 }
 export default ServicesScale

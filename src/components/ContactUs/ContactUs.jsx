@@ -1,15 +1,28 @@
 import './ContactUs.css'
 import '../Services/Servicespage.css'
+import { motion } from 'framer-motion'
 const ContactUs = (props) => {
     return(
         <section>
         <div className="hero-section">
           <div className="hero-content">
-            <h1 className="main-heading">Let's connect and talk about <span>your needs</span> </h1>
-            <p className="hero-description txt-19">
+            <motion.h1 className="main-heading"
+              initial={{ opacity: 0, y:50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2}}
+              viewport={{once:true}}>Let's connect and talk about <span>your needs</span> </motion.h1>
+            <motion.p className="hero-description txt-19"
+              initial={{ opacity: 0, y:50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2, delay: 0.3}}
+              viewport={{once:true}}>
                 We work with teams and institutions to support projects, partnership, and learning programs.
-            </p>
-            <div className="contact-card-container">
+            </motion.p>
+            <motion.div className="contact-card-container"
+              initial={{ opacity: 0, y:50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2, delay: 0.6}}
+              viewport={{once:true}}>
                 <div className="eachContact-card">
                     <div className="contact-image-cont">
                       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -43,11 +56,15 @@ const ContactUs = (props) => {
                         <p className="txt-16">No. 22/89, Ground Floor, Mc Nichols Road,Chetpet,Chennai 600031</p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
           </div>
-            <div className="hero-image-placeholder">
+            <motion.div className="hero-image-placeholder"
+              initial={{ opacity: 0, y:50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2, delay: 0.9}}
+              viewport={{once:true}}>
             <img className="hero-image" src="https://static.vecteezy.com/system/resources/previews/035/504/977/non_2x/ai-generated-a-smiling-teacher-in-a-classroom-setting-free-photo.jpg" alt='yokesh' />
-            </div>
+            </motion.div>
         </div>
       
             <div className="follow-journey-bg">
