@@ -9,19 +9,19 @@ const ContactUs = (props) => {
             <motion.h1 className="main-heading"
               initial={{ opacity: 0, y:50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2}}
+              transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{once:true}}>Let's connect and talk about <span>your needs</span> </motion.h1>
             <motion.p className="hero-description txt-19"
               initial={{ opacity: 0, y:50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2, delay: 0.3}}
+              transition={{ duration: 0.6, delay: 0.4}}
               viewport={{once:true}}>
                 We work with teams and institutions to support projects, partnership, and learning programs.
             </motion.p>
             <motion.div className="contact-card-container"
               initial={{ opacity: 0, y:50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2, delay: 0.6}}
+              transition={{ duration: 0.6, delay: 0.6}}
               viewport={{once:true}}>
                 <div className="eachContact-card">
                     <div className="contact-image-cont">
@@ -61,7 +61,7 @@ const ContactUs = (props) => {
             <motion.div className="hero-image-placeholder"
               initial={{ opacity: 0, y:50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2, delay: 0.9}}
+              transition={{ duration: 0.6, delay: 0.8}}
               viewport={{once:true}}>
             <img className="hero-image" src="https://static.vecteezy.com/system/resources/previews/035/504/977/non_2x/ai-generated-a-smiling-teacher-in-a-classroom-setting-free-photo.jpg" alt='yokesh' />
             </motion.div>

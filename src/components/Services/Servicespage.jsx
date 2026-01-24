@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import {useLocation} from 'react-router-dom'
 import './Servicespage.css';
 import AccordionDemo from '../../assets/Accordian';
-import FadeContent from '../../assets/FadeContent.jsx'
 import ServicesBuild from './ServicesBuild'
 import ServicesScale from './ServicesScale'
 import ServicesIntelligence from './ServicesIntelligence'
@@ -118,12 +117,12 @@ const ServicesPage = () => {
           <motion.h2 className="section-title txt-48"
             initial={{ opacity: 0, y:50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2}}
+            transition={{ duration: 0.6 }}
             viewport={{once:true}}>Still have Questions?<br/>We have answers.</motion.h2>
           <motion.div className='faq-items'
             initial={{ opacity: 0, y:50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2, delay: 0.3}}
+            transition={{ duration: 0.6, delay: 0.3}}
             viewport={{once:true}}><AccordionDemo /></motion.div>
       </section>
       </div>
