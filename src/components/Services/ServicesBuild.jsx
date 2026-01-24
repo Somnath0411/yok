@@ -20,12 +20,12 @@ const ServicesBuild = (props) => {
     <motion.section className="service-section"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
       viewport={{ once: true }}>
       <motion.div className="service-section-badge"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
         viewport={{ once: true }}>
         <pre>Build</pre>
         <h2 className="main-heading">Application Development & Modernization</h2>
@@ -34,7 +34,7 @@ const ServicesBuild = (props) => {
       <motion.div className="service-content"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 0.4 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
         viewport={{ once: true }}>
         <div className="service-image">
           {/* <img 

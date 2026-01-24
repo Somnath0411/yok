@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import ServiceButton from './servicebtns'
-import FadeContent from '../../assets/FadeContent.jsx'
 import {Link} from 'react-router-dom'
 import arrow from '../../assets/arrow.jsx'
 import { motion } from 'framer-motion'
@@ -73,39 +72,38 @@ class Services extends Component{
           <motion.h2 className="main-heading"
             initial={{ opacity: 0, y:50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2}}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{once:true}}>The platform for smarter scalable transformation</motion.h2>
         </div>
         <div className="services-row">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}>
             <ServiceButton  isactive={active==="build"} name="Build" btnfunction={this.onclickBuild}/>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}>
             <ServiceButton  isactive={active==="scale"} name="Scale" btnfunction={this.onclickScale}/>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2, delay: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}>
             <ServiceButton  isactive={active==="intelligence"} name="Intelligence" btnfunction={this.onclickIntelligence}/>
           </motion.div>
         </div>
-      <motion.div className='services-body'
-        key={active}
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 0.6 }}
-        viewport={{ once: true }}>
-          <div className="service-body-img-cont">
+      <div className='services-body'>
+          <motion.div className="service-body-img-cont"   
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1 }}
+              viewport={{ once: true }}>
             {
               active==='build' && <video autoPlay  muted className='services-body-img' src={l1.build.img}  alt="services" />
             }
@@ -115,8 +113,13 @@ class Services extends Component{
             {
               active==='intelligence' && <video autoPlay muted className='services-body-img' src={l1.intelligence.img} alt="services" />
             }
-          </div>
-          <div className='services-body-description '>
+          </motion.div>
+          <motion.div className='services-body-description '
+            key={active}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            viewport={{ once: true }}>
             { active==='build' && <h3 className='txt-33'>
               {l1.build.heading}
             </h3>}
@@ -126,10 +129,20 @@ class Services extends Component{
             { active==='intelligence' && <h3 className='txt-33'>
               {l1.intelligence.heading}
             </h3>}
-              <div className="txt-19">
+              <motion.div className="txt-19"
+                key={active}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1.4 }}
+                viewport={{ once: true }}>
               { active==='build' &&
               <div>
-                <ul className='description-list'>
+                <ul className='description-list'   
+                  key={active}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 1.4}}
+                  viewport={{ once: true }}>
                   <li className='description-list-item'><span className="dot active"/>{l1.build.p1}</li>
                   <li className='description-list-item'><span className="dot active"/>{l1.build.p2}</li>
                   <li className='description-list-item'><span className="dot active"/>{l1.build.p3}</li>
@@ -173,9 +186,9 @@ class Services extends Component{
                 </Link> 
               </div>
               }
-              </div>
-          </div>
-      </motion.div>
+              </motion.div>
+          </motion.div>
+      </div>
     </section>
   )
 }

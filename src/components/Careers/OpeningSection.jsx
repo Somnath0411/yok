@@ -7,9 +7,10 @@ const OpeningSection = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
+        staggerChildren: 0.3,
         delayChildren: 0.5,
       },
+      viewport: { once: true, whileInView: true},
     },
   }
 
@@ -65,12 +66,12 @@ const OpeningSection = () => {
       <motion.div className="opening-section"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}>
         <motion.div className="opening-section-title"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}>
             <pre>Jobs</pre>
             <h2 className="main-heading">Open Roles</h2>
@@ -87,12 +88,12 @@ const OpeningSection = () => {
       <motion.div className="opening-section"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
         viewport={{ once: true }}>
         <motion.div className="opening-section-title"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
           viewport={{ once: true }}>
             <pre>interns</pre>
             <h2 className="main-heading">Internship <span>Opportunities</span></h2>

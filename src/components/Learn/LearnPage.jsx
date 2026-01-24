@@ -67,8 +67,8 @@ const LearnPage= () => {
       visible: {
         opacity: 1,
         transition: {
-          staggerChildren: 0.15,
-          delayChildren: 0.1,
+          staggerChildren: 0.3,
+          delayChildren: 0.4,
         },
       },
     }
@@ -83,10 +83,14 @@ const LearnPage= () => {
     return (
       <section className="learn-section">
         <LearnHeader/>
-        <div className="courses-section-header ">
+        <motion.div className="courses-section-header " 
+            initial={{ opacity: 0, y:50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay:0.3, ease: 'easeInOut'}}
+           viewport={{once:true}} >
           <pre>Courses</pre>
           <h2 className="main-heading">Explore our courses</h2>
-        </div>
+        </motion.div>
         <motion.div className="course-card-cont" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "0px 0px -100px 0px" }}>
             {courses.map((course)=> <CourseCard key={course.name} courseName={course.name} description={course.description} img={course.img} duration={course.duration} variants={cardVariants}/> )}
         </motion.div>

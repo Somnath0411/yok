@@ -15,25 +15,21 @@ const ServicesIntelligence = (props) => {
     };
 
  return (
-    <motion.section className="service-section"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2 }}
-      viewport={{ once: true }}>
+    <section className="service-section">
       <motion.div className="service-section-badge"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
         viewport={{ once: true }}>
         <pre>Intelligence</pre>
         <h2 className="main-heading">Data Analytics & Decision Intelligence</h2>
       </motion.div>
-      <motion.div className="service-content"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 0.4 }}
-        viewport={{ once: true }}>
-        <div className="service-image">
+      <div className="service-content">
+        <motion.div className="service-image"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true }}>
           {/* The key={activeAppIndex} forces the image to re-mount and trigger CSS animations */}
           {/* <img 
             src={intelligenceService[activeAppIndex].img} 
@@ -42,8 +38,12 @@ const ServicesIntelligence = (props) => {
             key={activeAppIndex} 
           /> */}
           <video autoPlay muted className='services-body-img' src="https://res.cloudinary.com/dra2qc1c7/video/upload/v1768541898/dckorlpbpbjjtyjv6sxx.mp4" alt="services" />
-        </div>
-        <div className="service-text">
+        </motion.div>
+        <motion.div className="service-text" 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}>
           <div className="service-list">
             {intelligenceService.map((service, index) => (
                <div 
@@ -59,9 +59,9 @@ const ServicesIntelligence = (props) => {
               </div>
             ))}
           </div>
-        </div> 
-      </motion.div>        
-      </motion.section>
+        </motion.div> 
+      </div>        
+      </section>
  )
 }
 export default ServicesIntelligence;
