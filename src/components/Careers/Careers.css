@@ -102,7 +102,12 @@
     gap:48px;
     padding:80px 0;
 }
+@media(max-width:1536px){
+    
+}
+@media(max-width:1280px){
 
+}
 /* Responsive adjustments */
 @media (max-width:1025px) {
     .opening-section { width: 80vw; padding-bottom: 56px }
@@ -118,7 +123,12 @@
     justify-content:space-around;
 }
 }
+@media(max-width:769px){
 
+}
+@media(max-width:640px){
+    
+}
 @media (max-width:480px) {
     .job-card-cont { grid-template-columns: 1fr }
     .job-card-image { height: 120px }

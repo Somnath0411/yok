@@ -66,6 +66,15 @@
 .sm-screen{
     display: none;
 }
+@media(max-width:1536px){
+    
+}
+@media(max-width:1280px){
+
+}
+@media(max-width:1025px){
+
+}
 @media(max-width:769px){
     .follow-socialmedia-links{
     gap:90px;
@@ -75,6 +84,9 @@
     width: 300px;
     height: 300px;
 }
+}
+@media(max-width:640px){
+
 }
 @media (max-width:480px){
 .hero-img{

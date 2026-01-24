@@ -141,6 +141,8 @@
 }
 .xplore-btn-cont{
     margin-bottom:96px;
+}@media(max-width:1536px){
+    
 }
 @media (max-width:1280px) {
     .course-card-cont{

@@ -79,6 +79,15 @@
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
 }
+@media(max-width:1536px){
+
+}
+@media(max-width:1280px){
+
+}
+@media(max-width:1025px){
+
+}
 
 @media (max-width:769px) {
   .header-inner {
@@ -138,6 +147,9 @@
     width: 100%;
     padding: 12px 24px !important;
   }
+}
+@media(max-width:640px){
+  
 }
 @media (max-width:480px) {
   .header-inner {

@@ -77,6 +77,12 @@
   font-size: 0.95rem;
   line-height: 1.6;
 }
+@media(max-width:1536px){
+    
+}
+@media(max-width:1280px){
+
+}
 @media (max-width:1025px){
   .faq-items{
     width: 100%;
@@ -113,6 +119,9 @@
     border-right: 1.5px solid #64748b;
     margin-right: 8px;
   }
+}
+@media(max-width: 640px){
+  
 }
 
 /* Mobile Devices (480px and below) */
