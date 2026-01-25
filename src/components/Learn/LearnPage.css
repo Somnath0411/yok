@@ -27,8 +27,8 @@
 } */
 .learn-header-section {
     /* 1. The Gradient Overlay + The Image */
-    max-width: 80vw;
-    margin:0 auto;
+    width: 80vw;
+    margin:auto;
     border-width:0px;
     border-radius:25px;
     border-top-right-radius:0px;
@@ -43,7 +43,6 @@
 
     /* 2. Sizing and Layout */
     height: 80vh;
-    width:100%;
     background-size: cover;
     background-position: center;
     
@@ -180,7 +179,7 @@
 @media(max-width: 640px){
     .learn-header-section {
     /* 1. The Gradient Overlay + The Image */
-    max-width: 80vw;
+    width: 100%;
     background-image: linear-gradient(
         to bottom, 
         white 10%, 
@@ -192,6 +191,7 @@
     /* 2. Sizing and Layout */
     height: 90vh;
     padding-left:20px;
+    border-radius: 0px;
     width:100%;
 }
 }
@@ -209,7 +209,6 @@
     }
     .learn-header-section {
     /* 1. The Gradient Overlay + The Image */
-    max-width: 90vw;
     background-image: linear-gradient(
         to bottom, 
         white 10%, 
@@ -220,6 +219,7 @@
 
     /* 2. Sizing and Layout */
     height: 90vh;
+    border-radius: 0px;
     width: 100%;
 }
 }
