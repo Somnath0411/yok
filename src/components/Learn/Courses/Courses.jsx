@@ -3,7 +3,7 @@ import '../LearnPage.css'
 import CourseCard from '../CourseCard'
 import {Component} from 'react'
 import Tabitem from './Tabitem.jsx'
-// import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const tabsList = [
   {tabId: 'ALL', displayText: 'All'},
@@ -396,24 +396,22 @@ class Courses extends Component {
         
         }
         )
-        // const containerVariants = {
-        //   hidden: { opacity: 0 },
-        //   visible: {
-        //     opacity: 1,
-        //     transition: {
-        //       staggerChildren: 0.15,
-        //       delayChildren: 0.1,
-        //     },
-        //   },
-        // }
-        // const cardVariants = {
-        //   hidden: { opacity: 0, y: 50 },
-        //   visible: {
-        //     opacity: 1,
-        //     y: 0,
-        //     transition: { duration: 0.6, ease: 'easeOut' },
-        //   },
-        // }
+           const containerVariants = {
+          hidden: { },
+          visible: {
+            transition: {
+              staggerChildren: 0.15,
+              delayChildren: 0.1,
+            },
+          },
+        }
+        const cardVariants = {
+          hidden: {  y: 50 },
+          visible: {
+            y: 0,
+            transition: { duration: 0.6, ease: 'easeOut' },
+          },
+        }
         return (
           <section className='Course-section'>
             <h1 className="main-heading">Explore all Courses</h1>
@@ -423,16 +421,16 @@ class Courses extends Component {
                 (<Tabitem key={eachtab.tabId} func={this.onClickCategory} isactive={eachtab.tabId===activeTabId} details={eachtab}/>)
                 )}
             </ul>
-            <ul className="courses-Cont">
+             <motion.ul className="courses-Cont" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true}}>
               { searchValue === "" ?
                 filteredCourses.map((eachCourse)=>(
-                  <CourseCard key={eachCourse.name} courseName={eachCourse.name} description={eachCourse.description} img={eachCourse.img} duration={eachCourse.duration} />
+                  <CourseCard key={eachCourse.name} courseName={eachCourse.name} description={eachCourse.description} img={eachCourse.img} duration={eachCourse.duration} variants={cardVariants}/>
                 )) :
                 searchresults.map((eachCourse)=>(
-                  <CourseCard key={eachCourse.name} courseName={eachCourse.name} description={eachCourse.description} img={eachCourse.img} duration={eachCourse.duration} />
+                  <CourseCard key={eachCourse.name} courseName={eachCourse.name} description={eachCourse.description} img={eachCourse.img} duration={eachCourse.duration} variants={cardVariants}/>
                 ))
               }
-            </ul>
+            </motion.ul>
           </section>
         )
     }

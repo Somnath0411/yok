@@ -1,9 +1,9 @@
 import './LearnPage.css'
-// import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 const CourseCard = (props)=>{
  const {courseName,description,img,duration} = props
  return(
-      <div className="course-card">
+      <motion.div className="course-card" variants={props.variants}>
       <div className="course-card-image-wrapper">
         <img className="course-card-image" src={img} alt="" />
       </div>
@@ -16,8 +16,7 @@ const CourseCard = (props)=>{
           <p>{duration}</p>
           </div>
     </div>
-  </div>
-
- )
+  </motion.div>
+  )
 }
 export default CourseCard;
