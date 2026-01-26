@@ -1,5 +1,7 @@
-import arrow from '../../assets/arrow.jsx'
-import { motion } from 'framer-motion'
+import arrow from '../../assets/arrow.jsx';
+import ApplicationModal from '../../assets/EmailSend.jsx';
+import { motion } from 'framer-motion';
+
 const JobCard = (props)=>{
  const {img, title, type, link,variants} = props
  return(
@@ -13,7 +15,7 @@ const JobCard = (props)=>{
           <p className="txt-19">{type}</p>
         </div>
         <div className="job-card-apply">
-        <a className="job-card-apply-link" href={link}>Apply</a>
+        <ApplicationModal role={title} classname="job-card-apply-link txt-19"/>
         <p>{arrow()}</p>
         </div>
     </div>

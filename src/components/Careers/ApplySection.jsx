@@ -1,3 +1,4 @@
+import ApplicationModal from '../../assets/EmailSend.jsx';
 
 const ApplySection = () => {
    return (
@@ -7,7 +8,8 @@ const ApplySection = () => {
           <h2 className="main-heading">Let's work together</h2>
           <p>Think you'd be a good fit?</p>
         </div>
-        <button className="apply-btn txt-23 white"><a className="apply-link" href="">Apply</a></button>    
+        <ApplicationModal role='none'classname="apply-btn txt-23"/>
+        {/* <button className="apply-btn txt-23 white"><a className="apply-link" href="">Apply</a></button>     */}
       </section>
 
     </div>
