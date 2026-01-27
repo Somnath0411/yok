@@ -17,9 +17,9 @@ const ApplicationModal = (props) => {
     e.preventDefault();
     setIsSending(true);
 
-    const serviceId = 'service_psq90nh'; // Replace with yours
-    const templateId = 'template_stuhfjq'; // Replace with yours
-    const publicKey = 'DldfD2Re5gi__573L'; // Replace with yours
+    const serviceId = ''; // Replace with yours
+    const templateId = ''; // Replace with yours
+    const publicKey = ''; // Replace with yours
 
     const templateParams = {
       from_name: formData.name,
@@ -67,14 +67,24 @@ const ApplicationModal = (props) => {
                 className="inputStyle" 
               />
               {role ==="none" && <><label htmlFor="role">Designation</label>
-              <input 
+              {/* <input 
                 id="role"
                 name="role" 
                 placeholder="Role (e.g. Developer)" 
                 required 
                 onChange={handleChange} 
                 className="inputStyle"  
-              /></> }
+              /> */}
+              <select id="role" name="role" className="inputStyle" value={formData.role}onChange={handleChange}>
+                <option value="" disabled hidden>Select an option</option>
+                <option value="SEO">SEO</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Video Editing">Video Editing</option>
+                <option value="Social Media Handler">Social Media Handler</option>
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+              </select>
+              </> }
               {role !=="none" && <><label htmlFor="role">Designation</label>
               <input 
                 id="role"
@@ -84,7 +94,8 @@ const ApplicationModal = (props) => {
                 required 
                 onChange={handleChange} 
                 className="inputStyle"  
-              /></> }
+              />
+              </> }
               <label htmlFor="email">Email</label>
               <input 
                 id="email"

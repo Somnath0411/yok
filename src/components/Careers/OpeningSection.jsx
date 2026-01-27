@@ -73,6 +73,7 @@ const OpeningSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}>
+            
             <pre>Jobs</pre>
             <h2 className="main-heading">Open Roles</h2>
             <p className="txt-19">Be part of meaningful projects with people who value clear thinking and collaboration.</p>
