@@ -3,7 +3,7 @@ import ApplicationModal from '../../assets/EmailSend.jsx';
 import { motion } from 'framer-motion';
 
 const JobCard = (props)=>{
- const {img, title, type, link,variants} = props
+ const {img, title, type,Description,variants} = props
  return(
   <motion.div className="job-card" variants={variants}>
     <div className="job-card-image-wrapper">
@@ -15,7 +15,7 @@ const JobCard = (props)=>{
           <p className="txt-19">{type}</p>
         </div>
         <div className="job-card-apply">
-        <ApplicationModal role={title} classname="job-card-apply-link txt-19"/>
+        <ApplicationModal role={title} jobDescription={Description} classname="job-card-apply-link txt-19"/>
         <p>{arrow()}</p>
         </div>
     </div>

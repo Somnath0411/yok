@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import './EmailSend.css'
 
 const ApplicationModal = (props) => {
-  const {classname,role}=props
+  const {classname,role,jobDescription}=props
  
   const [isOpen, setIsOpen] = useState(false);
   const [isSending, setIsSending] = useState(false); // To show loading state
@@ -56,6 +56,9 @@ const ApplicationModal = (props) => {
         <div className="overlayStyle">
           <div className="modalStyle">
             <h3>Submit Application</h3>
+            {role !=="none" && <>
+               <p className="job-description-applyForm txt-13 darkblue-text">{jobDescription}</p>
+              </> }
             <form onSubmit={sendEmail}>
               <label htmlFor="name">Name</label>
               <input 

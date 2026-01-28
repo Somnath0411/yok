@@ -53,6 +53,10 @@
 .apply-btn:hover {
   background-color: #0056b3;
 }
+.job-description-applyForm{
+  margin:15px 0;
+  color:var()
+}
 
 @media (max-width: 1536px) {
 }

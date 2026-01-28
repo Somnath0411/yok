@@ -5,20 +5,20 @@ import {Link} from 'react-router-dom'
 import { motion } from 'framer-motion'
 const LearnPage= () => {
   const courses=[
-   {
-    Category: "DESIGN & USER EXPERIENCE",
-    name: "UI/UX Training",
-    description: "Master the fundamentals of supervised and unsupervised learning algorithms.",
-    duration: "60 hrs",
-    img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1769081116/aft86e0mqmkuu4or9er8.jpg"
-  },
-  {
-    Category: "DESIGN & USER EXPERIENCE",
-    name: "Graphical Design Training",
-    description: "Build scalable full-stack applications using the MERN stack from scratch.",
-    duration: "120 hrs",
-    img: "https://rmskytech.com/wp-content/uploads/2024/08/graphic-designer-hd-image.jpg.webp"
-  },
+  //  {
+  //   Category: "DESIGN & USER EXPERIENCE",
+  //   name: "UI/UX Training",
+  //   description: "Master the fundamentals of supervised and unsupervised learning algorithms.",
+  //   duration: "60 hrs",
+  //   img: "https://res.cloudinary.com/dra2qc1c7/image/upload/v1769081116/aft86e0mqmkuu4or9er8.jpg"
+  // },
+  // {
+  //   Category: "DESIGN & USER EXPERIENCE",
+  //   name: "Graphical Design Training",
+  //   description: "Build scalable full-stack applications using the MERN stack from scratch.",
+  //   duration: "120 hrs",
+  //   img: "https://rmskytech.com/wp-content/uploads/2024/08/graphic-designer-hd-image.jpg.webp"
+  // },
   {
     Category: "CLOUD",
     name: "AWS Training",
@@ -47,20 +47,20 @@ const LearnPage= () => {
     duration: "25 hrs",
     img: "https://images.surferseo.art/dd5bca24-2a93-452c-a5fa-1362d7f63467.png"
   },
-  {
-    Category: "DATA ENGINEERING & ANALYTICS",
-    name: "Data Engineering Training",
-    description: "Build neural networks and dive deep into computer vision models.",
-    duration: "80 hrs",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjHkPO9BNRX0bjAo1Q9J7sJWVrdFm_ddlP7Q&s"
-  },
-  {
-    Category: "DATA ENGINEERING & ANALYTICS",
-    name: "ETL Testing Training",
-    description: "Learn to architect robust databases and write complex SQL queries.",
-    duration: "40 hrs",
-    img: "https://miro.medium.com/v2/resize:fit:1400/1*6tiErTf3IPqBXR9bqR1lDg.png"
-  }
+  // {
+  //   Category: "DATA ENGINEERING & ANALYTICS",
+  //   name: "Data Engineering Training",
+  //   description: "Build neural networks and dive deep into computer vision models.",
+  //   duration: "80 hrs",
+  //   img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjHkPO9BNRX0bjAo1Q9J7sJWVrdFm_ddlP7Q&s"
+  // },
+  // {
+  //   Category: "DATA ENGINEERING & ANALYTICS",
+  //   name: "ETL Testing Training",
+  //   description: "Learn to architect robust databases and write complex SQL queries.",
+  //   duration: "40 hrs",
+  //   img: "https://miro.medium.com/v2/resize:fit:1400/1*6tiErTf3IPqBXR9bqR1lDg.png"
+  // }
 ]
     const containerVariants = {
       hidden: { opacity: 0 },
